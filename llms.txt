@@ -14,13 +14,19 @@ Rules for agents:
 
 Important files:
 - README.md — human overview and quick start
+- CONTRIBUTING.md — contribution standard
+- SECURITY.md — redaction and security policy
+- ROADMAP.md — project roadmap
 - catalog.json — machine-readable catalog
 - schemas/loop-card.schema.json — required fields
+- docs/index.html — mini landing page
+- docs/announcement-draft.md — ready-to-post announcement draft, not posted
 - docs/positioning.md — positioning and contribution standard
 - docs/risk-taxonomy.md — safety levels
 - docs/platform-matrix.md — agent/runtime compatibility
 - loops/ — loop cards
 - examples/ — proof receipts
+- .github/ISSUE_TEMPLATE/ — GitHub issue templates
 
 Proof-grade seed loops:
 - AAL-LOOP-001 — Core Hygiene Sweep

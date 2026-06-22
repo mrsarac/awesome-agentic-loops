@@ -1,5 +1,10 @@
 # Awesome Agentic Loops — Agentic Loop Atlas
 
+[![Status: proof-grade seed](https://img.shields.io/badge/status-proof--grade%20seed-22c55e)](#initial-loop-set)
+[![Loops: 10](https://img.shields.io/badge/loops-10-67e8f9)](catalog.json)
+[![License: MIT](https://img.shields.io/badge/license-MIT-a78bfa)](LICENSE)
+[![Contributions: receipts welcome](https://img.shields.io/badge/contributions-receipts%20welcome-fbbf24)](CONTRIBUTING.md)
+
 > A proof-oriented registry of reusable AI-agent operating loops: triggers, actions, verification, memory, stopping conditions, risk gates, and receipts for Claude Code, Codex, Cursor, Hermes, OpenCode, and durable runtimes.
 
 **Motion is not progress; proof is.**
@@ -80,15 +85,19 @@ status: proof-grade
 ## Repository map
 
 ```text
-catalog.json                  Machine-readable catalog
-llms.txt                      Agent-readable guide
-docs/index.html               Mini landing page
-docs/announcement-draft.md    Public announcement draft, not posted
-docs/positioning.md           Public positioning and contribution standard
+.github/                     Issue and PR templates
+LICENSE                      MIT license
+SECURITY.md                  Security and redaction policy
+ROADMAP.md                   Project roadmap
+catalog.json                 Machine-readable catalog
+llms.txt                     Agent-readable guide
+docs/index.html              Mini landing page
+docs/announcement-draft.md   Public announcement draft, not posted
+docs/positioning.md          Public positioning and contribution standard
 schemas/loop-card.schema.json JSON Schema for loop cards
-loops/                        Canonical loop cards
-examples/                     Receipts and real-world proof examples
-docs/                         Taxonomy, platform matrix, launch notes
+loops/                       Canonical loop cards
+examples/                    Receipts and real-world proof examples
+docs/                        Taxonomy, platform matrix, launch notes
 ```
 
 ## Guardrails
@@ -100,7 +109,7 @@ docs/                         Taxonomy, platform matrix, launch notes
 
 ## Contributing
 
-Start with [`CONTRIBUTING.md`](CONTRIBUTING.md). A contributed loop should include:
+Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) or the GitHub issue templates. The highest-value contributions are real receipts from agent runs.
 
 - loop card metadata
 - use case and trigger

@@ -1,0 +1,33 @@
+name: Pattern hardening
+description: Improve an existing loop, receipt, guardrail, or documentation page
+title: "Pattern hardening: <area>"
+labels: ["hardening"]
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      placeholder: AAL-LOOP-005 / catalog.json / docs/risk-taxonomy.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is ambiguous, unsafe, unproven, or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed change
+      description: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: How can we verify the improvement?
+    validations:
+      required: true

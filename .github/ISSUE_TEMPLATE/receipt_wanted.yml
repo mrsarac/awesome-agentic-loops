@@ -1,0 +1,35 @@
+name: Receipt wanted
+description: Request or contribute real-world proof for an existing loop
+title: "Receipt wanted: AAL-LOOP-<id>"
+labels: ["receipt-wanted"]
+body:
+  - type: input
+    id: loop_id
+    attributes:
+      label: Loop ID
+      placeholder: AAL-LOOP-004
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What repo/runtime/situation was used?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include redacted commands, outputs, diffs, screenshots, or links.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed secrets, tokens, private logs, and customer data.
+          required: true
+        - label: I included a clear stop condition and approval gate.
+          required: true

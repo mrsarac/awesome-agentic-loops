@@ -1,0 +1,51 @@
+name: Loop proposal
+description: Propose a new agentic loop card
+title: "Loop proposal: <name>"
+labels: ["loop-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a loop. We accept loops, not vibes: include trigger, bounded action, proof, memory, stop condition, cost guard, and approval gate.
+  - type: input
+    id: name
+    attributes:
+      label: Loop name
+      placeholder: Flaky Test Killer
+    validations:
+      required: true
+  - type: textarea
+    id: use_when
+    attributes:
+      label: Use when
+      description: What concrete situation should trigger this loop?
+    validations:
+      required: true
+  - type: textarea
+    id: action
+    attributes:
+      label: Bounded action
+      description: What is the loop allowed to do, and what is out of scope?
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: Proof / receipt
+      description: What evidence proves the loop worked?
+    validations:
+      required: true
+  - type: textarea
+    id: stop
+    attributes:
+      label: Stopping condition
+      description: When must the loop stop?
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk and approval gate
+      description: What actions require explicit human approval?
+    validations:
+      required: true

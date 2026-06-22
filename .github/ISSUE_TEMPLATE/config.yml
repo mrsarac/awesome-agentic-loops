@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the loop contract
+    url: https://github.com/mrsarac/awesome-agentic-loops#loop-card-schema
+    about: Start here before proposing a new loop.
