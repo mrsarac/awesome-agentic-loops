@@ -1,13 +1,15 @@
 # Awesome Agentic Loops — Agentic Loop Atlas
 
-> A proof-oriented registry of reusable AI-agent loops: triggers, actions, verification, memory, stopping conditions, risk gates, and runnable recipes for Claude Code, Codex, Cursor, Hermes, OpenCode, and durable runtimes.
+> A proof-oriented registry of reusable AI-agent operating loops: triggers, actions, verification, memory, stopping conditions, risk gates, and receipts for Claude Code, Codex, Cursor, Hermes, OpenCode, and durable runtimes.
+
+**Motion is not progress; proof is.**
 
 This is not another prompt dump. A loop only belongs here when it has:
 
 - a clear **trigger**
 - a bounded **action**
 - concrete **proof**
-- durable **memory**
+- durable **memory/state guidance**
 - a falsifiable **stopping condition**
 - explicit **risk and approval gates**
 - at least one runnable example or receipt shape
@@ -18,17 +20,27 @@ Agentic loops are moving from hype to operating discipline. The useful question 
 
 > What system prompts the agent, checks the result, remembers the state, and knows when to stop?
 
+Most awesome-agent lists collect tools. Agentic Loop Atlas collects **operating patterns**.
+
+| Common list | Agentic Loop Atlas |
+|---|---|
+| Tools and links | Reusable operating loops |
+| Prompt snippets | Trigger/action/proof/memory/stop/risk cards |
+| “Autonomous” claims | Approval gates and receipts |
+| Broad inspiration | Bounded runnable patterns |
+| No stop condition | Stop condition required |
+
 ## Quick start
 
-1. Pick a loop from `loops/`.
+1. Pick a loop from [`loops/`](loops/).
 2. Check its `risk_level` and `approval_gate`.
-3. Adapt the tool commands to your agent/runtime.
-4. Run one bounded iteration.
+3. Adapt the commands to your agent/runtime.
+4. Run **one bounded iteration**.
 5. Keep the receipt; do not trust vibes.
 
 ## Loop card schema
 
-Every loop follows `schemas/loop-card.schema.json` and this shape:
+Every loop follows [`schemas/loop-card.schema.json`](schemas/loop-card.schema.json) and this shape:
 
 ```yaml
 id: AAL-LOOP-001
@@ -46,29 +58,31 @@ max_iterations: 1
 cost_guard: one bounded run
 works_with: [Hermes, Claude Code, Codex, Cursor]
 failure_modes: [scope creep, stale context, accidental broad rewrite]
-example_receipt: examples/apm-loop-001-core-hygiene-sweep.md
+example_receipt: examples/aal-loop-001-core-hygiene-sweep-receipt.md
+status: proof-grade
 ```
 
 ## Initial loop set
 
 | ID | Loop | Category | Risk | Status |
 |---|---|---|---|---|
-| AAL-LOOP-001 | Core Hygiene Sweep | Operations | docs | draft |
-| AAL-LOOP-002 | Docs/README Milestone Sweep | Documentation | docs | draft |
-| AAL-LOOP-003 | Production Error Sweep | Operations | read-only/service | draft |
-| AAL-LOOP-004 | Flaky Test Killer | Engineering | code | draft |
-| AAL-LOOP-005 | PR CI Babysitter | Engineering | code/external | draft |
-| AAL-LOOP-006 | Stale PR Review Resolver | Engineering | code/external | draft |
-| AAL-LOOP-007 | Security Headers / OWASP Sweep | Security | code/service | draft |
-| AAL-LOOP-008 | Cost Budget Watch Loop | FinOps | read-only/billing | draft |
-| AAL-LOOP-009 | Research-to-Public-Artifact Loop | Research | external | draft |
-| AAL-LOOP-010 | Agent Mesh Health Loop | Operations | read-only | draft |
+| AAL-LOOP-001 | [Core Hygiene Sweep](loops/aal-loop-001-core-hygiene-sweep.md) | Operations | docs | proof-grade |
+| AAL-LOOP-002 | [Docs/README Milestone Sweep](loops/aal-loop-002-docs-readme-milestone-sweep.md) | Documentation | docs | proof-grade |
+| AAL-LOOP-003 | [Production Error Sweep](loops/aal-loop-003-production-error-sweep.md) | Operations | read-only/service | proof-grade |
+| AAL-LOOP-004 | [Flaky Test Killer](loops/aal-loop-004-flaky-test-killer.md) | Engineering | code | draft |
+| AAL-LOOP-005 | [PR CI Babysitter](loops/aal-loop-005-pr-ci-babysitter.md) | Engineering | code/external | draft |
+| AAL-LOOP-006 | [Stale PR Review Resolver](loops/aal-loop-006-stale-pr-review-resolver.md) | Engineering | code/external | draft |
+| AAL-LOOP-007 | [Security Headers / OWASP Sweep](loops/aal-loop-007-security-headers-owasp-sweep.md) | Security | code/service | draft |
+| AAL-LOOP-008 | [Cost Budget Watch Loop](loops/aal-loop-008-cost-budget-watch-loop.md) | FinOps | read-only/billing | draft |
+| AAL-LOOP-009 | [Research-to-Public-Artifact Loop](loops/aal-loop-009-research-to-public-artifact-loop.md) | Research | external | draft |
+| AAL-LOOP-010 | [Agent Mesh Health Loop](loops/aal-loop-010-agent-mesh-health-loop.md) | Operations | read-only | draft |
 
 ## Repository map
 
 ```text
 catalog.json                  Machine-readable catalog
 llms.txt                      Agent-readable guide
+docs/positioning.md           Public positioning and contribution standard
 schemas/loop-card.schema.json JSON Schema for loop cards
 loops/                        Canonical loop cards
 examples/                     Receipts and real-world proof examples
@@ -82,6 +96,22 @@ docs/                         Taxonomy, platform matrix, launch notes
 - “Run while you sleep” is not a strategy. It is a liability unless proof, cost, and rollback exist.
 - The agent that created the output should not be the only judge of the output.
 
+## Contributing
+
+Start with [`CONTRIBUTING.md`](CONTRIBUTING.md). A contributed loop should include:
+
+- loop card metadata
+- use case and trigger
+- bounded action
+- proof requirements
+- memory/state guidance
+- stopping condition
+- approval gates
+- failure modes
+- example receipt or receipt template
+
+If it lacks proof or a stop condition, it is not ready.
+
 ## Status
 
-Seeded from LOOP-MKT-20260622 research and APM-LOOP-001 proof pattern.
+Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First three loop cards are proof-grade; remaining cards are draft candidates awaiting receipts.

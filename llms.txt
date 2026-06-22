@@ -1,19 +1,28 @@
 # Awesome Agentic Loops / Agentic Loop Atlas
 
-Use this repository to find and design bounded AI-agent loops.
+Use this repository to find and design bounded AI-agent operating loops.
+
+Core rule: motion is not progress; proof is.
 
 Rules for agents:
 - Prefer loops with proof, stopping_condition, approval_gate, and cost_guard.
-- Do not run destructive, service, credential, billing, or external-message actions without explicit human approval.
+- Do not run destructive, service, credential, billing, deploy, or external-message actions without explicit human approval.
 - Start with one bounded iteration.
 - End with a receipt and next-loop plan.
 - If no loop fits, design a new Loop Card using schemas/loop-card.schema.json.
+- Do not treat a draft loop as production-ready until it has a receipt.
 
 Important files:
-- README.md — human overview
+- README.md — human overview and quick start
 - catalog.json — machine-readable catalog
 - schemas/loop-card.schema.json — required fields
+- docs/positioning.md — positioning and contribution standard
 - docs/risk-taxonomy.md — safety levels
 - docs/platform-matrix.md — agent/runtime compatibility
 - loops/ — loop cards
 - examples/ — proof receipts
+
+Proof-grade seed loops:
+- AAL-LOOP-001 — Core Hygiene Sweep
+- AAL-LOOP-002 — Docs/README Milestone Sweep
+- AAL-LOOP-003 — Production Error Sweep

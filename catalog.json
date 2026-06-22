@@ -8,7 +8,8 @@
       "category": "operations",
       "risk_level": "docs",
       "path": "loops/aal-loop-001-core-hygiene-sweep.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-001-core-hygiene-sweep-receipt.md"
     },
     {
       "id": "AAL-LOOP-002",
@@ -16,7 +17,8 @@
       "category": "documentation",
       "risk_level": "docs",
       "path": "loops/aal-loop-002-docs-readme-milestone-sweep.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-002-docs-readme-milestone-sweep-receipt.md"
     },
     {
       "id": "AAL-LOOP-003",
@@ -24,7 +26,8 @@
       "category": "operations",
       "risk_level": "read-only/service",
       "path": "loops/aal-loop-003-production-error-sweep.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-003-production-error-sweep-receipt.md"
     },
     {
       "id": "AAL-LOOP-004",
@@ -82,5 +85,8 @@
       "path": "loops/aal-loop-010-agent-mesh-health-loop.md",
       "status": "draft"
     }
-  ]
+  ],
+  "positioning": "docs/positioning.md",
+  "status": "seed-release",
+  "proof_grade_count": 3
 }
