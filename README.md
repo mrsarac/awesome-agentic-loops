@@ -69,9 +69,9 @@ status: proof-grade
 | AAL-LOOP-001 | [Core Hygiene Sweep](loops/aal-loop-001-core-hygiene-sweep.md) | Operations | docs | proof-grade |
 | AAL-LOOP-002 | [Docs/README Milestone Sweep](loops/aal-loop-002-docs-readme-milestone-sweep.md) | Documentation | docs | proof-grade |
 | AAL-LOOP-003 | [Production Error Sweep](loops/aal-loop-003-production-error-sweep.md) | Operations | read-only/service | proof-grade |
-| AAL-LOOP-004 | [Flaky Test Killer](loops/aal-loop-004-flaky-test-killer.md) | Engineering | code | draft |
-| AAL-LOOP-005 | [PR CI Babysitter](loops/aal-loop-005-pr-ci-babysitter.md) | Engineering | code/external | draft |
-| AAL-LOOP-006 | [Stale PR Review Resolver](loops/aal-loop-006-stale-pr-review-resolver.md) | Engineering | code/external | draft |
+| AAL-LOOP-004 | [Flaky Test Killer](loops/aal-loop-004-flaky-test-killer.md) | Engineering | code | proof-grade |
+| AAL-LOOP-005 | [PR CI Babysitter](loops/aal-loop-005-pr-ci-babysitter.md) | Engineering | code/external | proof-grade |
+| AAL-LOOP-006 | [Stale PR Review Resolver](loops/aal-loop-006-stale-pr-review-resolver.md) | Engineering | code/external | proof-grade |
 | AAL-LOOP-007 | [Security Headers / OWASP Sweep](loops/aal-loop-007-security-headers-owasp-sweep.md) | Security | code/service | draft |
 | AAL-LOOP-008 | [Cost Budget Watch Loop](loops/aal-loop-008-cost-budget-watch-loop.md) | FinOps | read-only/billing | draft |
 | AAL-LOOP-009 | [Research-to-Public-Artifact Loop](loops/aal-loop-009-research-to-public-artifact-loop.md) | Research | external | draft |
@@ -114,4 +114,4 @@ If it lacks proof or a stop condition, it is not ready.
 
 ## Status
 
-Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First three loop cards are proof-grade; remaining cards are draft candidates awaiting receipts.
+Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First six loop cards are proof-grade; remaining cards are draft candidates awaiting receipts.

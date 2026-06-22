@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Agentic Loop Atlas social preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.52" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="28%" cy="22%" r="70%">
+      <stop offset="0" stop-color="#67e8f9" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#8b5cf6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+  <g opacity="0.18" stroke="#dbeafe" stroke-width="1">
+    <path d="M0 120h1280M0 240h1280M0 360h1280M0 480h1280"/>
+    <path d="M160 0v640M320 0v640M480 0v640M640 0v640M800 0v640M960 0v640M1120 0v640"/>
+  </g>
+  <g transform="translate(92 86)">
+    <rect x="0" y="0" width="1096" height="468" rx="34" fill="#020617" opacity="0.58" stroke="#67e8f9" stroke-opacity="0.35"/>
+    <text x="56" y="84" fill="#67e8f9" class="mono" font-size="24" letter-spacing="4">AWESOME AGENTIC LOOPS</text>
+    <text x="56" y="180" fill="#f8fafc" class="sans" font-size="76" font-weight="900">Agentic Loop Atlas</text>
+    <text x="60" y="244" fill="#cbd5e1" class="sans" font-size="32">Reusable AI-agent loops with proof, stop conditions,</text>
+    <text x="60" y="288" fill="#cbd5e1" class="sans" font-size="32">memory, cost guards, and approval gates.</text>
+    <g transform="translate(58 350)">
+      <rect x="0" y="0" width="190" height="48" rx="24" fill="#0f766e" opacity="0.86"/>
+      <text x="24" y="32" fill="#ecfeff" class="mono" font-size="20">TRIGGER</text>
+      <text x="212" y="33" fill="#67e8f9" class="mono" font-size="28">→</text>
+      <rect x="260" y="0" width="170" height="48" rx="24" fill="#1d4ed8" opacity="0.86"/>
+      <text x="287" y="32" fill="#eff6ff" class="mono" font-size="20">PROOF</text>
+      <text x="455" y="33" fill="#67e8f9" class="mono" font-size="28">→</text>
+      <rect x="504" y="0" width="160" height="48" rx="24" fill="#7c3aed" opacity="0.86"/>
+      <text x="532" y="32" fill="#f5f3ff" class="mono" font-size="20">STOP</text>
+      <text x="688" y="33" fill="#67e8f9" class="mono" font-size="28">→</text>
+      <rect x="735" y="0" width="230" height="48" rx="24" fill="#b45309" opacity="0.90"/>
+      <text x="762" y="32" fill="#fffbeb" class="mono" font-size="20">RISK GATE</text>
+    </g>
+    <text x="60" y="440" fill="#94a3b8" class="mono" font-size="22">Motion is not progress; proof is.</text>
+  </g>
+</svg>

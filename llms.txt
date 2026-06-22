@@ -26,3 +26,9 @@ Proof-grade seed loops:
 - AAL-LOOP-001 — Core Hygiene Sweep
 - AAL-LOOP-002 — Docs/README Milestone Sweep
 - AAL-LOOP-003 — Production Error Sweep
+- AAL-LOOP-004 — Flaky Test Killer
+- AAL-LOOP-005 — PR CI Babysitter
+- AAL-LOOP-006 — Stale PR Review Resolver
+
+Social preview candidate:
+- assets/social-preview.svg — upload manually in GitHub repo settings if GitHub does not pick it automatically.

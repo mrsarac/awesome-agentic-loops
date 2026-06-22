@@ -35,7 +35,8 @@
       "category": "engineering",
       "risk_level": "code",
       "path": "loops/aal-loop-004-flaky-test-killer.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-004-flaky-test-killer-receipt.md"
     },
     {
       "id": "AAL-LOOP-005",
@@ -43,7 +44,8 @@
       "category": "engineering",
       "risk_level": "code/external",
       "path": "loops/aal-loop-005-pr-ci-babysitter.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-005-pr-ci-babysitter-receipt.md"
     },
     {
       "id": "AAL-LOOP-006",
@@ -51,7 +53,8 @@
       "category": "engineering",
       "risk_level": "code/external",
       "path": "loops/aal-loop-006-stale-pr-review-resolver.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-006-stale-pr-review-resolver-receipt.md"
     },
     {
       "id": "AAL-LOOP-007",
@@ -88,5 +91,6 @@
   ],
   "positioning": "docs/positioning.md",
   "status": "seed-release",
-  "proof_grade_count": 3
+  "proof_grade_count": 6,
+  "social_preview": "assets/social-preview.svg"
 }
