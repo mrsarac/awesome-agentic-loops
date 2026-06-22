@@ -1,0 +1,86 @@
+{
+  "name": "awesome-agentic-loops",
+  "generated_from": "LOOP-MKT-20260622",
+  "loops": [
+    {
+      "id": "AAL-LOOP-001",
+      "name": "Core Hygiene Sweep",
+      "category": "operations",
+      "risk_level": "docs",
+      "path": "loops/aal-loop-001-core-hygiene-sweep.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-002",
+      "name": "Docs README Milestone Sweep",
+      "category": "documentation",
+      "risk_level": "docs",
+      "path": "loops/aal-loop-002-docs-readme-milestone-sweep.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-003",
+      "name": "Production Error Sweep",
+      "category": "operations",
+      "risk_level": "read-only/service",
+      "path": "loops/aal-loop-003-production-error-sweep.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-004",
+      "name": "Flaky Test Killer",
+      "category": "engineering",
+      "risk_level": "code",
+      "path": "loops/aal-loop-004-flaky-test-killer.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-005",
+      "name": "PR CI Babysitter",
+      "category": "engineering",
+      "risk_level": "code/external",
+      "path": "loops/aal-loop-005-pr-ci-babysitter.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-006",
+      "name": "Stale PR Review Resolver",
+      "category": "engineering",
+      "risk_level": "code/external",
+      "path": "loops/aal-loop-006-stale-pr-review-resolver.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-007",
+      "name": "Security Headers OWASP Sweep",
+      "category": "security",
+      "risk_level": "code/service",
+      "path": "loops/aal-loop-007-security-headers-owasp-sweep.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-008",
+      "name": "Cost Budget Watch Loop",
+      "category": "finops",
+      "risk_level": "read-only/billing",
+      "path": "loops/aal-loop-008-cost-budget-watch-loop.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-009",
+      "name": "Research to Public Artifact Loop",
+      "category": "research",
+      "risk_level": "external",
+      "path": "loops/aal-loop-009-research-to-public-artifact-loop.md",
+      "status": "draft"
+    },
+    {
+      "id": "AAL-LOOP-010",
+      "name": "Agent Mesh Health Loop",
+      "category": "operations",
+      "risk_level": "read-only",
+      "path": "loops/aal-loop-010-agent-mesh-health-loop.md",
+      "status": "draft"
+    }
+  ]
+}

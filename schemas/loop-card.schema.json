@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agentic Loop Card",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "use_when",
+    "trigger",
+    "action",
+    "proof",
+    "memory",
+    "stopping_condition",
+    "risk_level",
+    "approval_gate",
+    "max_iterations",
+    "cost_guard",
+    "works_with",
+    "failure_modes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "use_when": {
+      "type": "string"
+    },
+    "trigger": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "proof": {
+      "type": "string"
+    },
+    "memory": {
+      "type": "string"
+    },
+    "stopping_condition": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string"
+    },
+    "approval_gate": {
+      "type": "string"
+    },
+    "max_iterations": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "cost_guard": {
+      "type": "string"
+    },
+    "works_with": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "example_receipt": {
+      "type": "string"
+    }
+  }
+}
