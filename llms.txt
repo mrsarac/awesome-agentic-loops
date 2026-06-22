@@ -29,6 +29,12 @@ Proof-grade seed loops:
 - AAL-LOOP-004 — Flaky Test Killer
 - AAL-LOOP-005 — PR CI Babysitter
 - AAL-LOOP-006 — Stale PR Review Resolver
+- AAL-LOOP-007 — Security Headers / OWASP Sweep
+- AAL-LOOP-008 — Cost Budget Watch Loop
+- AAL-LOOP-009 — Research-to-Public-Artifact Loop
+- AAL-LOOP-010 — Agent Mesh Health Loop
 
-Social preview candidate:
+Launch artifacts:
+- docs/index.html — mini landing page
+- docs/announcement-draft.md — public announcement draft, not posted
 - assets/social-preview.svg — upload manually in GitHub repo settings if GitHub does not pick it automatically.

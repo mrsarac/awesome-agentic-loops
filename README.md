@@ -72,16 +72,18 @@ status: proof-grade
 | AAL-LOOP-004 | [Flaky Test Killer](loops/aal-loop-004-flaky-test-killer.md) | Engineering | code | proof-grade |
 | AAL-LOOP-005 | [PR CI Babysitter](loops/aal-loop-005-pr-ci-babysitter.md) | Engineering | code/external | proof-grade |
 | AAL-LOOP-006 | [Stale PR Review Resolver](loops/aal-loop-006-stale-pr-review-resolver.md) | Engineering | code/external | proof-grade |
-| AAL-LOOP-007 | [Security Headers / OWASP Sweep](loops/aal-loop-007-security-headers-owasp-sweep.md) | Security | code/service | draft |
-| AAL-LOOP-008 | [Cost Budget Watch Loop](loops/aal-loop-008-cost-budget-watch-loop.md) | FinOps | read-only/billing | draft |
-| AAL-LOOP-009 | [Research-to-Public-Artifact Loop](loops/aal-loop-009-research-to-public-artifact-loop.md) | Research | external | draft |
-| AAL-LOOP-010 | [Agent Mesh Health Loop](loops/aal-loop-010-agent-mesh-health-loop.md) | Operations | read-only | draft |
+| AAL-LOOP-007 | [Security Headers / OWASP Sweep](loops/aal-loop-007-security-headers-owasp-sweep.md) | Security | code/service | proof-grade |
+| AAL-LOOP-008 | [Cost Budget Watch Loop](loops/aal-loop-008-cost-budget-watch-loop.md) | FinOps | read-only/billing | proof-grade |
+| AAL-LOOP-009 | [Research-to-Public-Artifact Loop](loops/aal-loop-009-research-to-public-artifact-loop.md) | Research | external | proof-grade |
+| AAL-LOOP-010 | [Agent Mesh Health Loop](loops/aal-loop-010-agent-mesh-health-loop.md) | Operations | read-only | proof-grade |
 
 ## Repository map
 
 ```text
 catalog.json                  Machine-readable catalog
 llms.txt                      Agent-readable guide
+docs/index.html               Mini landing page
+docs/announcement-draft.md    Public announcement draft, not posted
 docs/positioning.md           Public positioning and contribution standard
 schemas/loop-card.schema.json JSON Schema for loop cards
 loops/                        Canonical loop cards
@@ -114,4 +116,4 @@ If it lacks proof or a stop condition, it is not ready.
 
 ## Status
 
-Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First six loop cards are proof-grade; remaining cards are draft candidates awaiting receipts.
+Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First ten loop cards are proof-grade seed patterns with receipt examples.

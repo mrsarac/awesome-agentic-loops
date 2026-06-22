@@ -62,7 +62,8 @@
       "category": "security",
       "risk_level": "code/service",
       "path": "loops/aal-loop-007-security-headers-owasp-sweep.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-007-security-headers-owasp-sweep-receipt.md"
     },
     {
       "id": "AAL-LOOP-008",
@@ -70,7 +71,8 @@
       "category": "finops",
       "risk_level": "read-only/billing",
       "path": "loops/aal-loop-008-cost-budget-watch-loop.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-008-cost-budget-watch-loop-receipt.md"
     },
     {
       "id": "AAL-LOOP-009",
@@ -78,7 +80,8 @@
       "category": "research",
       "risk_level": "external",
       "path": "loops/aal-loop-009-research-to-public-artifact-loop.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-009-research-to-public-artifact-loop-receipt.md"
     },
     {
       "id": "AAL-LOOP-010",
@@ -86,11 +89,14 @@
       "category": "operations",
       "risk_level": "read-only",
       "path": "loops/aal-loop-010-agent-mesh-health-loop.md",
-      "status": "draft"
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-010-agent-mesh-health-loop-receipt.md"
     }
   ],
   "positioning": "docs/positioning.md",
   "status": "seed-release",
-  "proof_grade_count": 6,
-  "social_preview": "assets/social-preview.svg"
+  "proof_grade_count": 10,
+  "social_preview": "assets/social-preview.svg",
+  "landing_page": "docs/index.html",
+  "announcement_draft": "docs/announcement-draft.md"
 }
