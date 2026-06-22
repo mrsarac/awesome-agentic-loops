@@ -1,5 +1,6 @@
 # Awesome Agentic Loops — Agentic Loop Atlas
 
+[![Validate Atlas](https://github.com/mrsarac/awesome-agentic-loops/actions/workflows/validate.yml/badge.svg)](https://github.com/mrsarac/awesome-agentic-loops/actions/workflows/validate.yml)
 [![Status: proof-grade seed](https://img.shields.io/badge/status-proof--grade%20seed-22c55e)](#initial-loop-set)
 [![Loops: 10](https://img.shields.io/badge/loops-10-67e8f9)](catalog.json)
 [![License: MIT](https://img.shields.io/badge/license-MIT-a78bfa)](LICENSE)

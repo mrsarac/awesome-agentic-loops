@@ -1,0 +1,36 @@
+name: Validate Atlas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Catalog, loop cards, and receipts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate catalog and loop contracts
+        run: python3 scripts/validate_atlas.py
+
+      - name: Validate loop YAML frontmatter syntax
+        run: |
+          ruby <<'RB'
+          require 'yaml'
+
+          Dir['loops/*.md'].sort.each do |path|
+            text = File.read(path)
+            abort "missing frontmatter: #{path}" unless text.start_with?("---\n")
+            parts = text.split(/^---\s*$/, 3)
+            abort "malformed frontmatter: #{path}" unless parts.length >= 3
+            YAML.safe_load(parts[1], aliases: true)
+          end
+
+          puts "YAML frontmatter syntax OK"
+          RB
