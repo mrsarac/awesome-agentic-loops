@@ -91,11 +91,20 @@
       "path": "loops/aal-loop-010-agent-mesh-health-loop.md",
       "status": "proof-grade",
       "example_receipt": "examples/aal-loop-010-agent-mesh-health-loop-receipt.md"
+    },
+    {
+      "id": "AAL-LOOP-011",
+      "name": "Competitor Delta Proof Loop",
+      "category": "research",
+      "risk_level": "read-only/external-signal",
+      "path": "loops/aal-loop-011-competitor-delta-proof-loop.md",
+      "status": "proof-grade",
+      "example_receipt": "examples/aal-loop-011-competitor-delta-proof-loop-receipt.md"
     }
   ],
   "positioning": "docs/positioning.md",
   "status": "seed-release",
-  "proof_grade_count": 10,
+  "proof_grade_count": 11,
   "social_preview": "assets/social-preview.svg",
   "landing_page": "docs/index.html",
   "announcement_draft": "docs/announcement-draft.md"

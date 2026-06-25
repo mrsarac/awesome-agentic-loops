@@ -39,6 +39,7 @@ Proof-grade seed loops:
 - AAL-LOOP-008 — Cost Budget Watch Loop
 - AAL-LOOP-009 — Research-to-Public-Artifact Loop
 - AAL-LOOP-010 — Agent Mesh Health Loop
+- AAL-LOOP-011 — Competitor Delta Proof Loop
 
 Launch artifacts:
 - docs/index.html — mini landing page

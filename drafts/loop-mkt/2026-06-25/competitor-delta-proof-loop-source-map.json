@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-06-25T11:20:12.951656+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "awesome agent loops",
+      "full_name": "webfuse-com/awesome-autoresearch",
+      "url": "https://github.com/webfuse-com/awesome-autoresearch",
+      "stars": 2269,
+      "forks": 171,
+      "updated": "2026-06-25",
+      "description": "A curated list of autonomous improvement loops, research agents, and autoresearch-style systems inspired by Karpathy's autoresearch."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "cobusgreyling/loop-engineering",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "stars": 1296,
+      "forks": 178,
+      "updated": "2026-06-25",
+      "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "bradAGI/awesome-cli-coding-agents",
+      "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+      "stars": 630,
+      "forks": 162,
+      "updated": "2026-06-25",
+      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "serenakeyitan/awesome-agent-loops",
+      "url": "https://github.com/serenakeyitan/awesome-agent-loops",
+      "stars": 173,
+      "forks": 11,
+      "updated": "2026-06-24",
+      "description": "A curated collection of the best /loop, /goal, and /schedule uses for Claude Code & Codex — real commands sourced from Twitter/X. The awesome-list of agent loops."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "markus-global/markus",
+      "url": "https://github.com/markus-global/markus",
+      "stars": 165,
+      "forks": 5,
+      "updated": "2026-06-25",
+      "description": "Not another agent framework — an operating system for AI workforces. Autonomous agents coordinate, remember across sessions, review each other's work, and deliver while you sleep. One command. Zero dependencies. Manage your AI company from your phone."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "invincible04/awesome-loop-engineering",
+      "url": "https://github.com/invincible04/awesome-loop-engineering",
+      "stars": 19,
+      "forks": 0,
+      "updated": "2026-06-25",
+      "description": "Build the system that prompts your agents. A teaching repo for loop engineering: chapters, an annotated reading list, copy-paste prompts, a runnable example, and a portable agent skill"
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "ChaoYue0307/awesome-loop-engineering",
+      "url": "https://github.com/ChaoYue0307/awesome-loop-engineering",
+      "stars": 13,
+      "forks": 2,
+      "updated": "2026-06-25",
+      "description": "Loop Engineering: a curated field guide to designing recurring AI agent and coding-agent loops — patterns, loop contracts, runnable examples, and resources above prompt, context, and harness engineering."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "saaddooo/claw-empire",
+      "url": "https://github.com/saaddooo/claw-empire",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-06-25",
+      "description": "Manage AI agent teams locally using CLI, OAuth, and API tools to simulate a virtual company with autonomous workflows."
+    }
+  ]
+}

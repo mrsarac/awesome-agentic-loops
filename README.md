@@ -3,7 +3,7 @@
 [![Validate Atlas](https://github.com/mrsarac/awesome-agentic-loops/actions/workflows/validate.yml/badge.svg)](https://github.com/mrsarac/awesome-agentic-loops/actions/workflows/validate.yml)
 [![Pages](https://img.shields.io/badge/pages-live-22c55e)](https://mrsarac.github.io/awesome-agentic-loops/)
 [![Status: proof-grade seed](https://img.shields.io/badge/status-proof--grade%20seed-22c55e)](#initial-loop-set)
-[![Loops: 10](https://img.shields.io/badge/loops-10-67e8f9)](catalog.json)
+[![Loops: 11](https://img.shields.io/badge/loops-11-67e8f9)](catalog.json)
 [![License: MIT](https://img.shields.io/badge/license-MIT-a78bfa)](LICENSE)
 [![Contributions: receipts welcome](https://img.shields.io/badge/contributions-receipts%20welcome-fbbf24)](CONTRIBUTING.md)
 
@@ -86,6 +86,7 @@ status: proof-grade
 | AAL-LOOP-008 | [Cost Budget Watch Loop](loops/aal-loop-008-cost-budget-watch-loop.md) | FinOps | read-only/billing | proof-grade |
 | AAL-LOOP-009 | [Research-to-Public-Artifact Loop](loops/aal-loop-009-research-to-public-artifact-loop.md) | Research | external | proof-grade |
 | AAL-LOOP-010 | [Agent Mesh Health Loop](loops/aal-loop-010-agent-mesh-health-loop.md) | Operations | read-only | proof-grade |
+| AAL-LOOP-011 | [Competitor Delta Proof Loop](loops/aal-loop-011-competitor-delta-proof-loop.md) | Research | read-only/external-signal | proof-grade |
 
 ## Repository map
 
@@ -130,4 +131,4 @@ If it lacks proof or a stop condition, it is not ready.
 
 ## Status
 
-Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First ten loop cards are proof-grade seed patterns with receipt examples.
+Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First eleven loop cards are proof-grade seed patterns with receipt examples.
