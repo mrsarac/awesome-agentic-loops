@@ -19,7 +19,6 @@ Important files:
 - ROADMAP.md — project roadmap
 - catalog.json — machine-readable catalog
 - schemas/loop-card.schema.json — required fields
-- docs/index.html — mini landing page
 - docs/announcement-draft.md — ready-to-post announcement draft, not posted
 - docs/positioning.md — positioning and contribution standard
 - docs/risk-taxonomy.md — safety levels
@@ -42,6 +41,5 @@ Proof-grade seed loops:
 - AAL-LOOP-011 — Competitor Delta Proof Loop
 
 Launch artifacts:
-- docs/index.html — mini landing page
 - docs/announcement-draft.md — public announcement draft, not posted
 - assets/social-preview.svg — upload manually in GitHub repo settings if GitHub does not pick it automatically.

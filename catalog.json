@@ -106,6 +106,5 @@
   "status": "seed-release",
   "proof_grade_count": 11,
   "social_preview": "assets/social-preview.svg",
-  "landing_page": "docs/index.html",
   "announcement_draft": "docs/announcement-draft.md"
 }

@@ -1,7 +1,6 @@
 # Awesome Agentic Loops — Agentic Loop Atlas
 
 [![Validate Atlas](https://github.com/mrsarac/awesome-agentic-loops/actions/workflows/validate.yml/badge.svg)](https://github.com/mrsarac/awesome-agentic-loops/actions/workflows/validate.yml)
-[![Pages](https://img.shields.io/badge/pages-live-22c55e)](https://mrsarac.github.io/awesome-agentic-loops/)
 [![Status: proof-grade seed](https://img.shields.io/badge/status-proof--grade%20seed-22c55e)](#initial-loop-set)
 [![Loops: 11](https://img.shields.io/badge/loops-11-67e8f9)](catalog.json)
 [![License: MIT](https://img.shields.io/badge/license-MIT-a78bfa)](LICENSE)
@@ -21,7 +20,6 @@ This is not another prompt dump. A loop only belongs here when it has:
 - explicit **risk and approval gates**
 - at least one runnable example or receipt shape
 
-- [Live landing page](https://mrsarac.github.io/awesome-agentic-loops/)
 - [GitHub repository](https://github.com/mrsarac/awesome-agentic-loops)
 
 ## Why this exists
@@ -97,7 +95,6 @@ SECURITY.md                  Security and redaction policy
 ROADMAP.md                   Project roadmap
 catalog.json                 Machine-readable catalog
 llms.txt                     Agent-readable guide
-docs/index.html              Mini landing page
 docs/announcement-draft.md   Public announcement draft, not posted
 docs/positioning.md          Public positioning and contribution standard
 schemas/loop-card.schema.json JSON Schema for loop cards
