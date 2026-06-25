@@ -1,7 +1,16 @@
 {
-  "generated_at": "2026-06-25T11:20:12.951656+02:00",
+  "generated_at": "2026-06-25T14:29:54.061264+02:00",
   "report_code": "LOOP-MKT-20260622-SUMMER",
   "sources": [
+    {
+      "query": "loop engineering",
+      "full_name": "neomjs/neo",
+      "url": "https://github.com/neomjs/neo",
+      "stars": 3214,
+      "forks": 214,
+      "updated": "2026-06-25",
+      "description": "Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-healing loops."
+    },
     {
       "query": "awesome agent loops",
       "full_name": "webfuse-com/awesome-autoresearch",
@@ -12,22 +21,22 @@
       "description": "A curated list of autonomous improvement loops, research agents, and autoresearch-style systems inspired by Karpathy's autoresearch."
     },
     {
-      "query": "loop engineering",
-      "full_name": "cobusgreyling/loop-engineering",
-      "url": "https://github.com/cobusgreyling/loop-engineering",
-      "stars": 1296,
-      "forks": 178,
-      "updated": "2026-06-25",
-      "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
-    },
-    {
       "query": "awesome agent loops",
       "full_name": "bradAGI/awesome-cli-coding-agents",
       "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
-      "stars": 630,
+      "stars": 633,
       "forks": 162,
       "updated": "2026-06-25",
       "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "boshu2/agentops",
+      "url": "https://github.com/boshu2/agentops",
+      "stars": 398,
+      "forks": 40,
+      "updated": "2026-06-25",
+      "description": "The operational layer for coding agents. Memory, validation, and feedback loops that compound between sessions."
     },
     {
       "query": "awesome agent loops",
@@ -64,15 +73,6 @@
       "forks": 2,
       "updated": "2026-06-25",
       "description": "Loop Engineering: a curated field guide to designing recurring AI agent and coding-agent loops — patterns, loop contracts, runnable examples, and resources above prompt, context, and harness engineering."
-    },
-    {
-      "query": "autonomous AI company",
-      "full_name": "saaddooo/claw-empire",
-      "url": "https://github.com/saaddooo/claw-empire",
-      "stars": 3,
-      "forks": 0,
-      "updated": "2026-06-25",
-      "description": "Manage AI agent teams locally using CLI, OAuth, and API tools to simulate a virtual company with autonomous workflows."
     }
   ]
 }
