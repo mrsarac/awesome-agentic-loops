@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-06-26T11:20:09.798227+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "awesome agent loops",
+      "full_name": "webfuse-com/awesome-autoresearch",
+      "url": "https://github.com/webfuse-com/awesome-autoresearch",
+      "stars": 2271,
+      "forks": 172,
+      "updated": "2026-06-26",
+      "description": "A curated list of autonomous improvement loops, research agents, and autoresearch-style systems inspired by Karpathy's autoresearch."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "bradAGI/awesome-cli-coding-agents",
+      "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+      "stars": 644,
+      "forks": 163,
+      "updated": "2026-06-26",
+      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "serenakeyitan/awesome-agent-loops",
+      "url": "https://github.com/serenakeyitan/awesome-agent-loops",
+      "stars": 175,
+      "forks": 11,
+      "updated": "2026-06-25",
+      "description": "A curated collection of the best /loop, /goal, and /schedule uses for Claude Code & Codex — real commands sourced from Twitter/X. The awesome-list of agent loops."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "myapihq/myapi",
+      "url": "https://github.com/myapihq/myapi",
+      "stars": 107,
+      "forks": 1,
+      "updated": "2026-06-25",
+      "description": "The unified API for autonomous companies. Ship a real business — website, backend, payments — from one terminal."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "Xuan-1998/LPSim",
+      "url": "https://github.com/Xuan-1998/LPSim",
+      "stars": 72,
+      "forks": 1,
+      "updated": "2026-06-26",
+      "description": "GPU-accelerated, multi-GPU traffic microsimulator for HPC and AI research at city scale: powers ICML 2026 deep-RL ride-hailing dispatch, MoE routing policies, and closed-loop LLM-driven fleet optimization over networks with hundreds of thousands of nodes and millions of agents."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "agent-team-foundation/first-tree",
+      "url": "https://github.com/agent-team-foundation/first-tree",
+      "stars": 34,
+      "forks": 11,
+      "updated": "2026-06-26",
+      "description": "First-tree routes work to the right agent, gives it the same context your team has, and loops humans in only when the rules say so. Lives in your GitHub. Open source."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "invincible04/awesome-loop-engineering",
+      "url": "https://github.com/invincible04/awesome-loop-engineering",
+      "stars": 22,
+      "forks": 1,
+      "updated": "2026-06-26",
+      "description": "Build the system that prompts your agents. A teaching repo for loop engineering: chapters, an annotated reading list, copy-paste prompts, a runnable example, and a portable agent skill"
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "ChaoYue0307/awesome-loop-engineering",
+      "url": "https://github.com/ChaoYue0307/awesome-loop-engineering",
+      "stars": 13,
+      "forks": 2,
+      "updated": "2026-06-25",
+      "description": "Loop Engineering: a curated field guide to designing recurring AI agent and coding-agent loops — patterns, loop contracts, runnable examples, and resources above prompt, context, and harness engineering."
+    }
+  ]
+}
