@@ -83,6 +83,8 @@ Most awesome-agent lists collect tools. Agentic Loop Atlas collects **operating 
 4. Run **one bounded iteration**.
 5. Keep the receipt; do not trust vibes.
 
+For integration patterns, see [`docs/integration.md`](docs/integration.md). For the portable registry direction, see [`docs/evolution-roadmap.md`](docs/evolution-roadmap.md) and [`registry/`](registry/).
+
 ### Runtime pattern
 
 Use the loop card as the contract around your agent, not as a magic prompt:
