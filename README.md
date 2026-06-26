@@ -6,11 +6,21 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-a78bfa)](LICENSE)
 [![Contributions: receipts welcome](https://img.shields.io/badge/contributions-receipts%20welcome-fbbf24)](CONTRIBUTING.md)
 
-> A proof-oriented registry of reusable AI-agent operating loops: triggers, actions, verification, memory, stopping conditions, risk gates, and receipts for Claude Code, Codex, Cursor, Hermes, OpenCode, and durable runtimes.
+> **AI agents do not need more prompt dumps. They need operating loops that know when to act, prove, remember, and stop.**
+
+Awesome Agentic Loops — the **Agentic Loop Atlas** — is a proof-oriented library of reusable AI-agent operating patterns for Claude Code, Codex, Cursor, Hermes, OpenCode, and durable agent runtimes.
 
 **Motion is not progress; proof is.**
 
-This is not another prompt dump. A loop only belongs here when it has:
+Use this when your agents, cron jobs, or coding copilots need to move from “interesting automation” to repeatable operational discipline:
+
+- research should become a public-ready artifact, not a notes graveyard
+- PRs and CI need bounded babysitting without endless context drift
+- cost, quota, and provider failures need decision-ready evidence
+- agent meshes need health checks, role boundaries, and receipts
+- launch workflows need approval gates instead of accidental posting
+
+A loop only belongs here when it has:
 
 - a clear **trigger**
 - a bounded **action**
@@ -20,7 +30,34 @@ This is not another prompt dump. A loop only belongs here when it has:
 - explicit **risk and approval gates**
 - at least one runnable example or receipt shape
 
+**Tagline:** Not prompts. Operating loops — with receipts.
+
 - [GitHub repository](https://github.com/mrsarac/awesome-agentic-loops)
+
+## Start with these loops
+
+| If you need to… | Start here | Why |
+|---|---|---|
+| turn research into something publishable | [AAL-LOOP-009 Research-to-Public-Artifact](loops/aal-loop-009-research-to-public-artifact-loop.md) | source map + claim check + stop before posting |
+| keep an agent mesh sane | [AAL-LOOP-010 Agent Mesh Health](loops/aal-loop-010-agent-mesh-health-loop.md) | reachability, role boundaries, stale jobs, receipt |
+| watch a market without drowning in noise | [AAL-LOOP-011 Competitor Delta Proof](loops/aal-loop-011-competitor-delta-proof-loop.md) | bounded scan + signal/noise split + no-public-write gate |
+| stop cost/quota failures from becoming chaos | [AAL-LOOP-008 Cost Budget Watch](loops/aal-loop-008-cost-budget-watch-loop.md) | turns spend/provider failures into decision items |
+
+## What makes a loop proof-grade?
+
+A proof-grade loop is not a vibe, a prompt, or a one-off script. It is an operating contract:
+
+```text
+trigger → bounded action → verification → memory/state update → stop condition → receipt
+```
+
+| Prompt dump | Proof-grade operating loop |
+|---|---|
+| “Ask the agent to do X” | Defines when X should run |
+| Relies on model confidence | Requires external proof |
+| Can run forever | Has max iterations and stop condition |
+| Hides risk in prose | Names risk level and approval gate |
+| Leaves no audit trail | Produces a receipt |
 
 ## Why this exists
 
@@ -45,6 +82,20 @@ Most awesome-agent lists collect tools. Agentic Loop Atlas collects **operating 
 3. Adapt the commands to your agent/runtime.
 4. Run **one bounded iteration**.
 5. Keep the receipt; do not trust vibes.
+
+### Runtime pattern
+
+Use the loop card as the contract around your agent, not as a magic prompt:
+
+```text
+Claude Code / Codex / Cursor / Hermes / OpenCode
+        ↓
+loop card: trigger + action + proof + stop condition
+        ↓
+receipt: what changed, what was verified, what still needs approval
+```
+
+For scheduled work, keep daily outputs compact and deterministic. Use stronger LLM review only for weekly quality checks, errors, or promotion decisions.
 
 ## Loop card schema
 
@@ -128,4 +179,12 @@ If it lacks proof or a stop condition, it is not ready.
 
 ## Status
 
-Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. First eleven loop cards are proof-grade seed patterns with receipt examples.
+Seeded from `LOOP-MKT-20260622` research and Mustafa Saraç's Agentic Project Mesh proof pattern. The first eleven loop cards are proof-grade seed patterns with receipt examples.
+
+Current posture:
+
+- **daily draft loop:** bounded market scan → draft artifact package → receipt
+- **weekly quality review:** promote only the loops that remain useful and non-repetitive
+- **public boundary:** repo artifacts may be published; social posts, releases, deploys, credentials, and external messages remain explicit human decisions
+
+The goal is not the largest list. The goal is the most reusable set of proven agent operating loops.
