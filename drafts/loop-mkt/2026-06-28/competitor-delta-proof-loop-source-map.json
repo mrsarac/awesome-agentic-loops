@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-06-28T11:20:39.933199+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "awesome agent loops",
+      "full_name": "webfuse-com/awesome-autoresearch",
+      "url": "https://github.com/webfuse-com/awesome-autoresearch",
+      "stars": 2273,
+      "forks": 173,
+      "updated": "2026-06-28",
+      "description": "A curated list of autonomous improvement loops, research agents, and autoresearch-style systems inspired by Karpathy's autoresearch."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "bradAGI/awesome-cli-coding-agents",
+      "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+      "stars": 659,
+      "forks": 172,
+      "updated": "2026-06-28",
+      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "serenakeyitan/awesome-agent-loops",
+      "url": "https://github.com/serenakeyitan/awesome-agent-loops",
+      "stars": 176,
+      "forks": 11,
+      "updated": "2026-06-26",
+      "description": "A curated collection of the best /loop, /goal, and /schedule uses for Claude Code & Codex — real commands sourced from Twitter/X. The awesome-list of agent loops."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "invincible04/awesome-loop-engineering",
+      "url": "https://github.com/invincible04/awesome-loop-engineering",
+      "stars": 24,
+      "forks": 1,
+      "updated": "2026-06-27",
+      "description": "Build the system that prompts your agents. A teaching repo for loop engineering: chapters, an annotated reading list, copy-paste prompts, a runnable example, and a portable agent skill"
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "sebattfg/ZeroScript-Free",
+      "url": "https://github.com/sebattfg/ZeroScript-Free",
+      "stars": 20,
+      "forks": 3,
+      "updated": "2026-06-28",
+      "description": "ZeroScript Free: Turn DeepSeek, Gemini, Kimi, GLM or Qwen into a Roblox Studio agent. Browser extension + local bridge. Read/edit scripts, run Luau, generate assets, all from chat. Robust agentic loop. No terminal needed. (Gemini & Kimi support experimental)"
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "ChaoYue0307/awesome-loop-engineering",
+      "url": "https://github.com/ChaoYue0307/awesome-loop-engineering",
+      "stars": 14,
+      "forks": 2,
+      "updated": "2026-06-27",
+      "description": "Loop Engineering: a curated field guide to designing recurring AI agent and coding-agent loops — patterns, loop contracts, runnable examples, and resources above prompt, context, and harness engineering."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "f0zzy2727/musubi",
+      "url": "https://github.com/f0zzy2727/musubi",
+      "stars": 8,
+      "forks": 0,
+      "updated": "2026-06-28",
+      "description": "Paired-LLM software engineering. Two different-vendor models — Claude + Codex — work as colleagues, not clones: one builds, one challenges. Their disagreement catches what either alone would miss. Human in the loop, every cycle on the record. Vibe coding, with receipts."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "bzcsk2/looprig",
+      "url": "https://github.com/bzcsk2/looprig",
+      "stars": 6,
+      "forks": 0,
+      "updated": "2026-06-28",
+      "description": "Free-first, model-adaptive coding agent runtime that makes local small LLMs work reliably with harness, checkpointing, verification, cache-aware context, and free-model fallback."
+    }
+  ]
+}
