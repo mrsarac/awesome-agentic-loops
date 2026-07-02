@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-02T11:20:40.972897+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "awesome agent loops",
+      "full_name": "bradAGI/awesome-cli-coding-agents",
+      "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+      "stars": 710,
+      "forks": 186,
+      "updated": "2026-07-02",
+      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "bastani-inc/atomic",
+      "url": "https://github.com/bastani-inc/atomic",
+      "stars": 268,
+      "forks": 42,
+      "updated": "2026-07-02",
+      "description": "The verifiable runtime for coding agents. Run verifiable engineering loops with control, alignment, and confidence. Define the work as stages, checks, gates, tools, artifacts, and approvals. Atomic runs the process so agent work is verifiable by design."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "huangruiteng/loopx",
+      "url": "https://github.com/huangruiteng/loopx",
+      "stars": 75,
+      "forks": 5,
+      "updated": "2026-07-02",
+      "description": "Loop engineering for long-running AI agents."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "gluonfield/jaz",
+      "url": "https://github.com/gluonfield/jaz",
+      "stars": 27,
+      "forks": 2,
+      "updated": "2026-07-02",
+      "description": "A personal AI on machines you own — any agent, loops that run overnight, boards, memory, and git control. Client/server split, always-on, open source end to end."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "KenKaiii/gg-framework",
+      "url": "https://github.com/KenKaiii/gg-framework",
+      "stars": 25,
+      "forks": 20,
+      "updated": "2026-07-02",
+      "description": "Modular TypeScript framework for building LLM-powered apps. Unified streaming API, agent loop, and CLI coding agent. Four providers. Zero bloat."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "HystonKayange/skill-probe",
+      "url": "https://github.com/HystonKayange/skill-probe",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-07-02",
+      "description": "Runtime-agnostic, co-loaded-aware auditor for AI agent skill libraries — measures which skill actually fires, with statistical confidence + a Bayesian fix-loop."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "saaddooo/claw-empire",
+      "url": "https://github.com/saaddooo/claw-empire",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-07-02",
+      "description": "Manage AI agent teams locally using CLI, OAuth, and API tools to simulate a virtual company with autonomous workflows."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "alrece/loop-engineering",
+      "url": "https://github.com/alrece/loop-engineering",
+      "stars": 2,
+      "forks": 2,
+      "updated": "2026-07-02",
+      "description": "全自动长程工程闭环：提出想法 → 大致规划 → 自动跑完整个项目（决策点用最佳方案自动选择），最后才叫用户验证。  跨工具编排 gstack（看）/ OpenSpec（写）/ GSD（做）/ Superpowers（守）/ CCG（对抗检查+多模型）， 每个有产出的环节嵌入对抗性质量门，execute 逐 plan 执行+检查。 保留 --interactive 可选的保守模式（撞决策就停）。"
+    }
+  ]
+}
