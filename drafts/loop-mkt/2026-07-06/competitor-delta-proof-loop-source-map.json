@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-06T11:20:29.687920+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "loop engineering",
+      "full_name": "neomjs/neo",
+      "url": "https://github.com/neomjs/neo",
+      "stars": 3226,
+      "forks": 214,
+      "updated": "2026-07-06",
+      "description": "Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-healing loops."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "huangruiteng/loopx",
+      "url": "https://github.com/huangruiteng/loopx",
+      "stars": 88,
+      "forks": 10,
+      "updated": "2026-07-06",
+      "description": "Loop engineering for long-running AI agents."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "saaddooo/claw-empire",
+      "url": "https://github.com/saaddooo/claw-empire",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-07-06",
+      "description": "Manage AI agent teams locally using CLI, OAuth, and API tools to simulate a virtual company with autonomous workflows."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "concettinaprofitable685/AutoLoop",
+      "url": "https://github.com/concettinaprofitable685/AutoLoop",
+      "stars": 2,
+      "forks": 0,
+      "updated": "2026-07-06",
+      "description": "Automate governed AI agent loops in Rust with policy checks, verification, memory, and replay for controlled execution"
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "baksohyeon/mogui-agent-harness",
+      "url": "https://github.com/baksohyeon/mogui-agent-harness",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-06",
+      "description": "Vendor-neutral agent ops harness: .agent context layer, LLM wiki, GSD planning, loop engineering, and Claude Code/Codex/Cursor hooks — wired into any repo in one setup (greenfield or turnkey ingest)."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "Nikkiunitary185/autoimprove-cc",
+      "url": "https://github.com/Nikkiunitary185/autoimprove-cc",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-06",
+      "description": "Automate Claude Code SKILL.md improvement with agent-driven eval loops, binary assertions, and git commits for steady skill gains"
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "Enuclea/AGent-Ada",
+      "url": "https://github.com/Enuclea/AGent-Ada",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-06",
+      "description": "**AGent-Ada** is a standalone, developer-focused autonomous execution harness built on top of the **Google AntiGravity SDK**. It wraps AntiGravity's agentic capabilities into a highly interactive terminal CLI and a visual Web Dashboard, offering a keyless development loop integrated with the system-wide `agy` CLI gateway.   Similar to Hermes."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "NewAbra/auto-co-meta",
+      "url": "https://github.com/NewAbra/auto-co-meta",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-06",
+      "description": "Automate running an AI-driven company using multiple agents through a bash loop that manages tasks and decisions from the terminal."
+    }
+  ]
+}
