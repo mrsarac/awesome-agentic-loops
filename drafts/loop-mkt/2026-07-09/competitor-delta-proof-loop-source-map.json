@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-09T11:20:49.022803+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "awesome agent loops",
+      "full_name": "bradAGI/awesome-cli-coding-agents",
+      "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+      "stars": 771,
+      "forks": 202,
+      "updated": "2026-07-09",
+      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "ChaoYue0307/awesome-loop-engineering",
+      "url": "https://github.com/ChaoYue0307/awesome-loop-engineering",
+      "stars": 20,
+      "forks": 2,
+      "updated": "2026-07-09",
+      "description": "Loop Engineering: a curated field guide to designing recurring AI agent and coding-agent loops — patterns, loop contracts, runnable examples, and resources above prompt, context, and harness engineering."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "spinningrachel/career-engine",
+      "url": "https://github.com/spinningrachel/career-engine",
+      "stars": 4,
+      "forks": 1,
+      "updated": "2026-07-09",
+      "description": "AI-powered job search campaign plugin for Claude Code. Multi-agent CV and cover letter pipeline with employment coach, review loop, and DOCX export."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "mrsarac/awesome-agentic-loops",
+      "url": "https://github.com/mrsarac/awesome-agentic-loops",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-07-06",
+      "description": "Proof-oriented registry of reusable AI-agent operating loops"
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "saaddooo/claw-empire",
+      "url": "https://github.com/saaddooo/claw-empire",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-07-09",
+      "description": "Manage AI agent teams locally using CLI, OAuth, and API tools to simulate a virtual company with autonomous workflows."
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "lumogis/lumogis",
+      "url": "https://github.com/lumogis/lumogis",
+      "stars": 2,
+      "forks": 1,
+      "updated": "2026-07-09",
+      "description": "Privacy-first personal AI. Semantic search across your files, session memory, and a human-in-the-loop agent model. Your data never leaves your machine."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "linmy666/madcop",
+      "url": "https://github.com/linmy666/madcop",
+      "stars": 2,
+      "forks": 0,
+      "updated": "2026-07-09",
+      "description": "madcop — local-first AI agent framework. Middleware-driven plan-execute loop, sub-agents, crash recovery (WAL), tool-use, and a self-diagnose CLI. Built on Qian engineering cybernetics."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "Nihilisticdelusionoldboy87/loop-engineering-orange-book",
+      "url": "https://github.com/Nihilisticdelusionoldboy87/loop-engineering-orange-book",
+      "stars": 2,
+      "forks": 0,
+      "updated": "2026-07-09",
+      "description": "Build automated agent systems that remove manual prompting by applying loop engineering principles for efficient software development."
+    }
+  ]
+}
