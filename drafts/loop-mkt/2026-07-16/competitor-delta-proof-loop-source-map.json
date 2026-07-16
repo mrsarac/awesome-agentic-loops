@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-16T11:20:33.288574+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "loop engineering",
+      "full_name": "neomjs/neo",
+      "url": "https://github.com/neomjs/neo",
+      "stars": 3234,
+      "forks": 217,
+      "updated": "2026-07-16",
+      "description": "Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-healing loops."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "huangruiteng/loopx",
+      "url": "https://github.com/huangruiteng/loopx",
+      "stars": 110,
+      "forks": 13,
+      "updated": "2026-07-16",
+      "description": "Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable todos, evidence logs, and verifiable handoffs."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "ChaoYue0307/awesome-loop-engineering",
+      "url": "https://github.com/ChaoYue0307/awesome-loop-engineering",
+      "stars": 23,
+      "forks": 3,
+      "updated": "2026-07-16",
+      "description": "🔁 Curated field guide to Loop Engineering — designing recurring AI-agent and coding-agent loops that discover work, verify results, and persist state. 500+ resources 📚, 15 patterns 🧩, loop contracts 📋, and runnable examples ⚙️ above prompt, context, and harness engineering."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "crewrig/crewrig",
+      "url": "https://github.com/crewrig/crewrig",
+      "stars": 18,
+      "forks": 2,
+      "updated": "2026-07-16",
+      "description": "A layered AI assistant configuration with shared skill sandbox and built-in harness engineering loop."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "KhaiTrang1995/agentic-awesome-kits",
+      "url": "https://github.com/KhaiTrang1995/agentic-awesome-kits",
+      "stars": 6,
+      "forks": 3,
+      "updated": "2026-07-16",
+      "description": "A universal collection of reusable Loop Engineering kits for AI coding agents—not just prompts. Each kit combines Skills, Rules, Templates, workflows, and validation loops to help agents autonomously plan, execute, verify, fix, and improve engineering tasks."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "saaddooo/claw-empire",
+      "url": "https://github.com/saaddooo/claw-empire",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-07-16",
+      "description": "Manage AI agent teams locally using CLI, OAuth, and API tools to simulate a virtual company with autonomous workflows."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "dragon15555000/ai_crew",
+      "url": "https://github.com/dragon15555000/ai_crew",
+      "stars": 2,
+      "forks": 0,
+      "updated": "2026-07-16",
+      "description": "Human-in-the-loop autonomous software engineering.  An orchestration system where multiple AI agents collaborate to plan, write, review, and test code — with a human approval gate before any file reaches production."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "Yugoge/awesome-claude-harness",
+      "url": "https://github.com/Yugoge/awesome-claude-harness",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-16",
+      "description": "A self-governing agent OS for Claude Code — an orchestrator-only main agent, an evidence-gated /spec→/dev→/close→/commit→/push pipeline, a defense-in-depth git protection kernel, and an autonomous overnight loop."
+    }
+  ]
+}
