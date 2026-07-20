@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-20T11:20:56.673725+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "loop engineering",
+      "full_name": "Kanevry/session-orchestrator",
+      "url": "https://github.com/Kanevry/session-orchestrator",
+      "stars": 46,
+      "forks": 8,
+      "updated": "2026-07-20",
+      "description": "Loop engineering for AI coding agents — turn ad-hoc sessions into a repeatable research → plan → wave-execute → close loop with verification gates. Runs on Claude Code, Codex CLI, Cursor, and Pi. MIT community plugin."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "ChaoYue0307/awesome-loop-engineering",
+      "url": "https://github.com/ChaoYue0307/awesome-loop-engineering",
+      "stars": 35,
+      "forks": 7,
+      "updated": "2026-07-20",
+      "description": "🔁 Build reliable recurring AI-agent systems: 601 resources, 20 operational patterns, 20 loop contracts, 8 runtime starters, an interactive atlas, and a structured dataset."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "KhaiTrang1995/agentic-awesome-kits",
+      "url": "https://github.com/KhaiTrang1995/agentic-awesome-kits",
+      "stars": 6,
+      "forks": 4,
+      "updated": "2026-07-18",
+      "description": "A universal collection of reusable Loop Engineering kits for AI coding agents—not just prompts. Each kit combines Skills, Rules, Templates, workflows, and validation loops to help agents autonomously plan, execute, verify, fix, and improve engineering tasks."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "fatihkc/awesome-agentic-engineering",
+      "url": "https://github.com/fatihkc/awesome-agentic-engineering",
+      "stars": 4,
+      "forks": 1,
+      "updated": "2026-07-19",
+      "description": "A curated guide to agentic engineering: building and shipping software by directing AI coding agents. Harnesses, context and loop engineering, spec-driven dev, evals, and real production case studies."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "BorisZhangYYY/awesome-AGENT-configure",
+      "url": "https://github.com/BorisZhangYYY/awesome-AGENT-configure",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-19",
+      "description": "基于 Harness 和 Loop，使你的 AGENT 做事严谨、准确、可溯源。"
+    },
+    {
+      "query": "agentic loop",
+      "full_name": "venkatpachala/AI-Customer-Support-",
+      "url": "https://github.com/venkatpachala/AI-Customer-Support-",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-20",
+      "description": "A production ready multi-agent AI Customer Support platform for D2C brands. Handles returns, refunds, cancellations, and policy queries using structured planning, tool execution, policy-grounded RAG, human-in-the-loop escalation, multi-tenant configuration, and full observability."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "intricos777-dot/aerovora-industries",
+      "url": "https://github.com/intricos777-dot/aerovora-industries",
+      "stars": 1,
+      "forks": 0,
+      "updated": "2026-07-20",
+      "description": "Aerovora Industries — Autonomous Bee Drone Manufacturer. Full company structure, business plan, production pipeline, AI agents."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "KanakMalpani/Loop-Engineering",
+      "url": "https://github.com/KanakMalpani/Loop-Engineering",
+      "stars": 0,
+      "forks": 1,
+      "updated": "2026-07-20",
+      "description": ""
+    }
+  ]
+}
