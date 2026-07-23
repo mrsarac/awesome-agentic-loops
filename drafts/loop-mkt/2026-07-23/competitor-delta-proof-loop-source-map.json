@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-23T11:20:20.088340+02:00",
+  "report_code": "LOOP-MKT-20260622-SUMMER",
+  "sources": [
+    {
+      "query": "loop engineering",
+      "full_name": "cobusgreyling/loop-engineering",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "stars": 9206,
+      "forks": 1255,
+      "updated": "2026-07-23",
+      "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "huangruiteng/loopx",
+      "url": "https://github.com/huangruiteng/loopx",
+      "stars": 145,
+      "forks": 21,
+      "updated": "2026-07-23",
+      "description": "Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable todos, evidence logs, and verifiable handoffs."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "ChaoYue0307/awesome-loop-engineering",
+      "url": "https://github.com/ChaoYue0307/awesome-loop-engineering",
+      "stars": 39,
+      "forks": 7,
+      "updated": "2026-07-23",
+      "description": "🔁 Build reliable recurring AI-agent systems: 671 resources, 22 operational patterns, 22 loop contracts, 8 runtime starters, an interactive atlas, and a structured dataset."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "whut09/paper_agent",
+      "url": "https://github.com/whut09/paper_agent",
+      "stars": 35,
+      "forks": 2,
+      "updated": "2026-07-23",
+      "description": "论文解析 Agent 系统（Agent Harness + Loop Engineering），实现结构化抽取与闭环验证优化。"
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "fatihkc/awesome-agentic-engineering",
+      "url": "https://github.com/fatihkc/awesome-agentic-engineering",
+      "stars": 10,
+      "forks": 3,
+      "updated": "2026-07-22",
+      "description": "A curated guide to agentic engineering: building and shipping software by directing AI coding agents. Harnesses, context and loop engineering, spec-driven dev, evals, and real production case studies."
+    },
+    {
+      "query": "awesome agent loops",
+      "full_name": "rudy2steiner/awesome-agent-loops",
+      "url": "https://github.com/rudy2steiner/awesome-agent-loops",
+      "stars": 3,
+      "forks": 2,
+      "updated": "2026-07-21",
+      "description": "Loops, not prompts. A curated list of loop engineering patterns, tools and templates for AI coding agents."
+    },
+    {
+      "query": "autonomous AI company",
+      "full_name": "jamillazarev/multica-ops",
+      "url": "https://github.com/jamillazarev/multica-ops",
+      "stars": 3,
+      "forks": 0,
+      "updated": "2026-07-23",
+      "description": "Mops 🐶 — your Executive Advisor for Multica: builds and runs an autonomous company of AI agents. Interview → team → conveyor → console."
+    },
+    {
+      "query": "loop engineering",
+      "full_name": "dean0x/mdscript",
+      "url": "https://github.com/dean0x/mdscript",
+      "stars": 2,
+      "forks": 2,
+      "updated": "2026-07-20",
+      "description": "A template language for composable LLM prompt engineering. Write prompts with variables, loops, conditionals, functions, and imports, then compile to clean Markdown."
+    }
+  ]
+}
