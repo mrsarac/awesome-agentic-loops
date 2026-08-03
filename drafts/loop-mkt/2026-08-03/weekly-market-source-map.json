@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-08-03T11:20:29.207575+02:00",
+  "report_code": "LOOP-MKT-WK-20260803-SUMMER",
+  "signal_hash": "ce03f47db81cd2000e77d8c5e0ea7823bf56d9b4330eb3860fa2349c6ec8d058",
+  "signals": [
+    {
+      "full_name": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "stars": 82697,
+      "forks": 10242,
+      "updated": "2026-08-03",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 78622,
+      "delta": 4075,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "snarktank/ralph",
+      "url": "https://github.com/snarktank/ralph",
+      "stars": 21359,
+      "forks": 2059,
+      "updated": "2026-08-03",
+      "description": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 21284,
+      "delta": 75,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "wanshuiyin/Auto-claude-code-research-in-sleep",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "stars": 14159,
+      "forks": 1257,
+      "updated": "2026-08-03",
+      "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 13915,
+      "delta": 244,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "cobusgreyling/loop-engineering",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "stars": 9801,
+      "forks": 1334,
+      "updated": "2026-08-03",
+      "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
+      "queries": [
+        "agentic loop",
+        "loop engineering"
+      ],
+      "previous_stars": 9469,
+      "delta": 332,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "the-open-agent/openagent",
+      "url": "https://github.com/the-open-agent/openagent",
+      "stars": 5487,
+      "forks": 635,
+      "updated": "2026-08-03",
+      "description": "⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 5456,
+      "delta": 31,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "agentscope-ai/AgentTeams",
+      "url": "https://github.com/agentscope-ai/AgentTeams",
+      "stars": 5283,
+      "forks": 633,
+      "updated": "2026-08-03",
+      "description": "An open-source Collaborative Multi-Agent OS for transparent, human-in-the-loop task coordination via Matrix rooms.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 5183,
+      "delta": 100,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "lemony-ai/cascadeflow",
+      "url": "https://github.com/lemony-ai/cascadeflow",
+      "stars": 3766,
+      "forks": 814,
+      "updated": "2026-08-03",
+      "description": "Cascading runtime for AI agents. Optimize cost, latency, quality, and policy decisions inside the agent loop.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 3606,
+      "delta": 160,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "Windy3f3f3f3f/how-claude-code-works",
+      "url": "https://github.com/Windy3f3f3f3f/how-claude-code-works",
+      "stars": 3357,
+      "forks": 688,
+      "updated": "2026-08-03",
+      "description": "Deep dive into Claude Code internals — architecture, agent loop, context engineering, and more. / 深入解析 Claude Code 源码：架构、Agent 循环、上下文工程、工具系统等",
+      "queries": [
+        "agentic loop",
+        "loop engineering"
+      ],
+      "previous_stars": 3297,
+      "delta": 60,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "wquguru/harness-books",
+      "url": "https://github.com/wquguru/harness-books",
+      "stars": 2728,
+      "forks": 322,
+      "updated": "2026-08-03",
+      "description": "📚 Two books on harness engineering — the design philosophies behind Claude Code & Codex: constraints, query loops, context governance, multi-agent verification. harness-books.agentway.dev",
+      "queries": [
+        "loop engineering"
+      ],
+      "previous_stars": 2700,
+      "delta": 28,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "bradAGI/awesome-cli-coding-agents",
+      "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+      "stars": 929,
+      "forks": 249,
+      "updated": "2026-08-03",
+      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure.",
+      "queries": [
+        "awesome agent loops"
+      ],
+      "previous_stars": 877,
+      "delta": 52,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    }
+  ]
+}
