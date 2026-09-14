@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-09-14T11:20:15.270013+02:00",
+  "report_code": "LOOP-MKT-WK-20260914-SUMMER",
+  "signal_hash": "909bd498b13240850b2ee0bf83080d72a979d262eb8637676494792c65e7d0fe",
+  "signals": [
+    {
+      "full_name": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "stars": 104914,
+      "forks": 13168,
+      "updated": "2026-09-14",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 102583,
+      "delta": 2331,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "snarktank/ralph",
+      "url": "https://github.com/snarktank/ralph",
+      "stars": 21782,
+      "forks": 2090,
+      "updated": "2026-09-14",
+      "description": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 21726,
+      "delta": 56,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "HKUDS/DeepCode",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "stars": 16531,
+      "forks": 2152,
+      "updated": "2026-09-14",
+      "description": "\"DeepCode: Open Agentic Coding (Agent Harness & Loop Engineering & Multi-Agent Orchestration)\"",
+      "queries": [
+        "agentic loop",
+        "loop engineering"
+      ],
+      "previous_stars": 16497,
+      "delta": 34,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "wanshuiyin/Auto-claude-code-research-in-sleep",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "stars": 16105,
+      "forks": 1378,
+      "updated": "2026-09-14",
+      "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 15822,
+      "delta": 283,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "cobusgreyling/loop-engineering",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "stars": 11199,
+      "forks": 1508,
+      "updated": "2026-09-14",
+      "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
+      "queries": [
+        "agentic loop",
+        "loop engineering"
+      ],
+      "previous_stars": 11094,
+      "delta": 105,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "huangruiteng/loopx",
+      "url": "https://github.com/huangruiteng/loopx",
+      "stars": 5843,
+      "forks": 536,
+      "updated": "2026-09-14",
+      "description": "Long-horizon agent control plane for durable, governed work across Codex, Claude Code, and other harnesses.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 5697,
+      "delta": 146,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "Q00/ouroboros",
+      "url": "https://github.com/Q00/ouroboros",
+      "stars": 5834,
+      "forks": 595,
+      "updated": "2026-09-14",
+      "description": "Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated, staged evaluation, budgeted evolution loop. MCP server, 14 runtimes: Claude Code, Codex CLI, Gemini CLI, OpenCode, Copilot, Kiro and more.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 5790,
+      "delta": 44,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "agentscope-ai/AgentTeams",
+      "url": "https://github.com/agentscope-ai/AgentTeams",
+      "stars": 5617,
+      "forks": 692,
+      "updated": "2026-09-14",
+      "description": "An open-source Collaborative Multi-Agent OS for transparent, human-in-the-loop task coordination via Matrix rooms.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": null,
+      "delta": null,
+      "reasons": [
+        "new_relevant_100_plus"
+      ]
+    },
+    {
+      "full_name": "Windy3f3f3f3f/how-claude-code-works",
+      "url": "https://github.com/Windy3f3f3f3f/how-claude-code-works",
+      "stars": 3625,
+      "forks": 704,
+      "updated": "2026-09-14",
+      "description": "Deep dive into Claude Code internals — architecture, agent loop, context engineering, and more. / 深入解析 Claude Code 源码：架构、Agent 循环、上下文工程、工具系统等",
+      "queries": [
+        "loop engineering"
+      ],
+      "previous_stars": 3595,
+      "delta": 30,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "wquguru/harness-books",
+      "url": "https://github.com/wquguru/harness-books",
+      "stars": 3098,
+      "forks": 366,
+      "updated": "2026-09-14",
+      "description": "📚 Two books on harness engineering — the design philosophies behind Claude Code & Codex: constraints, query loops, context governance, multi-agent verification. harness-books.agentway.dev",
+      "queries": [
+        "loop engineering"
+      ],
+      "previous_stars": 2939,
+      "delta": 159,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    }
+  ]
+}
