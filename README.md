@@ -6,11 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-a78bfa)](LICENSE)
 [![Contributions: receipts welcome](https://img.shields.io/badge/contributions-receipts%20welcome-fbbf24)](CONTRIBUTING.md)
 
-> **AI agents do not need more prompt dumps. They need operating loops that know when to act, prove, remember, and stop.**
-
-Awesome Agentic Loops — the **Agentic Loop Atlas** — is a proof-oriented library of reusable AI-agent operating patterns for Claude Code, Codex, Cursor, Hermes, OpenCode, and durable agent runtimes.
-
-**Motion is not progress; proof is.**
+Awesome Agentic Loops (the Agentic Loop Atlas) is a registry of 11 reusable operating loops for AI agents such as Claude Code, Codex, Cursor, Hermes, OpenCode and other durable agent runtimes, with a JSON catalog, a loop-card schema, receipt examples, and GitHub Actions validation. Each loop defines a trigger, bounded action, proof, memory guidance, stopping condition, risk level, and approval gate.
 
 Use this when your agents, cron jobs, or coding copilots need to move from “interesting automation” to repeatable operational discipline:
 
