@@ -1,0 +1,1628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic Loop Atlas — The Scroll Receipt</title>
+    <meta name="description" content="A scroll-driven walkthrough of the 11 proof-grade loops in Agentic Loop Atlas: trigger, action, proof, memory and stop." />
+    <meta property="og:title" content="Agentic Loop Atlas — The Scroll Receipt" />
+    <meta property="og:description" content="A scroll-driven walkthrough of the 11 proof-grade loops in Agentic Loop Atlas: trigger, action, proof, memory and stop." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      /* Motion animates only transform and opacity, never layout properties. */
+
+      :root {
+        --bg-void: #090a0f;
+        --bg-panel: #111218;
+        --bg-panel-sub: #171822;
+        --border-subtle: #232532;
+        --border-mid: #383b4e;
+        --text-pure: #f8fafc;
+        --text-mute: #94a3b8;
+        --text-dim: #505468;
+        --accent-warm: #f59e0b;
+        --accent-warm-light: #fbbf24;
+        --accent-cyan: #38bdf8;
+        --accent-slate: #64748b;
+        --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        --font-mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+      }
+
+      html {
+        background-color: var(--bg-void);
+        color: var(--text-pure);
+        font-family: var(--font-display);
+        font-size: 15px;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        background-color: var(--bg-void);
+        color: var(--text-pure);
+        overflow-x: hidden;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus-visible, button:focus-visible {
+        outline: 2px solid var(--accent-warm);
+        outline-offset: 2px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          padding: 0 1rem;
+        }
+      }
+
+      /* Global Progress Rail */
+      .scroll-rail-fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: rgba(255, 255, 255, 0.05);
+        z-index: 100;
+        pointer-events: none;
+      }
+
+      .scroll-rail-bar {
+        width: 100%;
+        height: 100%;
+        background-color: var(--accent-warm);
+        transform-origin: top;
+        transform: scaleY(0);
+        will-change: transform;
+      }
+
+      /* Top Navigation Bar */
+      .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 52px;
+        background-color: rgba(9, 10, 15, 0.88);
+        border-bottom: 1px solid var(--border-subtle);
+        z-index: 90;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .nav-brand {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-pure);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .status-dot {
+        width: 6px;
+        height: 6px;
+        background-color: var(--accent-warm);
+        display: inline-block;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--text-mute);
+      }
+
+      .nav-links a:hover {
+        color: var(--text-pure);
+      }
+
+      /* Hero Section */
+      .hero-viewport {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0 3rem;
+        overflow: hidden;
+      }
+
+      .hero-canvas-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-badge-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.35rem 0.85rem;
+        background-color: var(--bg-panel);
+        border: 1px solid var(--border-subtle);
+        font-family: var(--font-mono);
+        font-size: 10.5px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-mute);
+        margin-bottom: 2rem;
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .hero-h1 {
+        font-size: clamp(3.2rem, 7.5vw, 6.2rem);
+        line-height: 0.98;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        color: var(--text-pure);
+        margin-bottom: 1.8rem;
+        text-transform: uppercase;
+      }
+
+      .hero-beat {
+        display: block;
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .hero-beat-accent {
+        color: var(--accent-warm);
+      }
+
+      .hero-subline {
+        font-family: var(--font-mono);
+        font-size: 13.5px;
+        letter-spacing: 0.04em;
+        color: var(--text-mute);
+        margin-bottom: 2.4rem;
+        max-width: 600px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .hero-cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 11.5px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.9rem 1.8rem;
+        min-height: 46px;
+        cursor: pointer;
+        border: 1px solid var(--border-subtle);
+        background-color: var(--bg-panel);
+        color: var(--text-pure);
+        transition: transform 0.15s ease, opacity 0.15s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background-color: var(--accent-warm);
+        color: #0b0c10;
+        border-color: var(--accent-warm);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--accent-warm-light);
+      }
+
+      .btn-secondary {
+        background-color: var(--bg-panel);
+        border-color: var(--border-mid);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--bg-panel-sub);
+      }
+
+      /* Revealed state for hero */
+      .hero-loaded .hero-badge-pill {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .hero-loaded .beat-1 {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.1s;
+      }
+      .hero-loaded .beat-2 {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.28s;
+      }
+      .hero-loaded .hero-subline {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.44s;
+      }
+      .hero-loaded .hero-cta-row {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.56s;
+      }
+
+      /* Metrics Strip */
+      .metrics-strip-wrap {
+        border-top: 1px solid var(--border-subtle);
+        border-bottom: 1px solid var(--border-subtle);
+        background-color: var(--bg-panel);
+      }
+
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: var(--border-subtle);
+        gap: 1px;
+      }
+
+      @media (max-width: 860px) {
+        .metrics-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .metric-cell:last-child {
+          grid-column: span 2;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .metrics-grid {
+          grid-template-columns: 1fr;
+        }
+        .metric-cell:last-child {
+          grid-column: span 1;
+        }
+      }
+
+      .metric-cell {
+        background-color: var(--bg-panel);
+        padding: 2rem 1.4rem;
+        text-align: left;
+      }
+
+      .metric-val {
+        font-family: var(--font-mono);
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: var(--text-pure);
+        line-height: 1;
+        margin-bottom: 0.4rem;
+      }
+
+      .metric-label {
+        font-family: var(--font-mono);
+        font-size: 10.5px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-mute);
+      }
+
+      /* Narrative Chapters */
+      .chapters-super-container {
+        position: relative;
+        width: 100%;
+      }
+
+      .chapter-track {
+        min-height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 0;
+        border-bottom: 1px solid var(--border-subtle);
+        position: relative;
+      }
+
+      .chapter-card-inner {
+        width: 100%;
+        max-width: 820px;
+        background-color: var(--bg-panel);
+        border: 1px solid var(--border-subtle);
+        padding: 3.5rem;
+        position: relative;
+        opacity: 0;
+        transform: translateY(32px);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      @media (max-width: 640px) {
+        .chapter-card-inner {
+          padding: 2rem 1.5rem;
+        }
+      }
+
+      .chapter-card-inner.is-revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .chapter-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border-subtle);
+        padding-bottom: 1rem;
+      }
+
+      .chapter-numeral {
+        font-family: var(--font-mono);
+        font-size: clamp(3rem, 6vw, 4.5rem);
+        font-weight: 800;
+        color: var(--accent-warm);
+        line-height: 1;
+      }
+
+      .chapter-stage-tag {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text-dim);
+      }
+
+      .chapter-h2 {
+        font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        color: var(--text-pure);
+        margin-bottom: 1.25rem;
+      }
+
+      .chapter-desc {
+        font-family: var(--font-mono);
+        font-size: 14.5px;
+        color: var(--text-mute);
+        line-height: 1.7;
+        margin-bottom: 2rem;
+      }
+
+      /* Micro-Visuals for non-pinned chapters */
+      .micro-visual-box {
+        background-color: var(--bg-panel-sub);
+        border: 1px solid var(--border-subtle);
+        padding: 1.5rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* 01 Trigger Pulse Visual */
+      .trigger-pulse-track {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+      }
+
+      .pulse-beacon {
+        width: 14px;
+        height: 14px;
+        background-color: var(--accent-warm);
+        position: relative;
+        flex-shrink: 0;
+      }
+
+      .pulse-ring {
+        position: absolute;
+        inset: -8px;
+        border: 1px solid var(--accent-warm);
+        opacity: 0;
+        transform: scale(0.6);
+        transition: transform 0.8s ease, opacity 0.8s ease;
+      }
+
+      .is-revealed .pulse-ring {
+        opacity: 0.8;
+        transform: scale(1.4);
+      }
+
+      /* 02 Action Bounded Box Visual */
+      .action-boundary-box {
+        height: 70px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--text-mute);
+      }
+
+      .boundary-line-top, .boundary-line-bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--accent-cyan);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .boundary-line-top { top: 0; }
+      .boundary-line-bottom { bottom: 0; }
+
+      .boundary-line-left, .boundary-line-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: var(--accent-cyan);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .boundary-line-left { left: 0; }
+      .boundary-line-right { right: 0; }
+
+      .is-revealed .boundary-line-top,
+      .is-revealed .boundary-line-bottom {
+        transform: scaleX(1);
+      }
+
+      .is-revealed .boundary-line-left,
+      .is-revealed .boundary-line-right {
+        transform: scaleY(1);
+      }
+
+      /* 04 Memory Visual + Contract Questions */
+      .memory-lines-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin-bottom: 2rem;
+      }
+
+      .memory-line-bar {
+        height: 6px;
+        background-color: var(--border-mid);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .memory-line-bar:nth-child(1) { width: 85%; transition-delay: 0.1s; background-color: var(--accent-warm); }
+      .memory-line-bar:nth-child(2) { width: 65%; transition-delay: 0.2s; }
+      .memory-line-bar:nth-child(3) { width: 92%; transition-delay: 0.3s; }
+      .memory-line-bar:nth-child(4) { width: 45%; transition-delay: 0.4s; }
+
+      .is-revealed .memory-line-bar {
+        transform: scaleX(1);
+      }
+
+      .contract-q-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background-color: var(--border-subtle);
+        border: 1px solid var(--border-subtle);
+        margin-top: 1.5rem;
+      }
+
+      @media (max-width: 720px) {
+        .contract-q-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .contract-q-cell {
+        background-color: var(--bg-panel);
+        padding: 1rem 1.2rem;
+        font-family: var(--font-mono);
+        font-size: 11.5px;
+      }
+
+      .contract-q-num {
+        color: var(--accent-warm);
+        font-weight: 700;
+        margin-right: 0.4rem;
+      }
+
+      .contract-q-title {
+        color: var(--text-pure);
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+      }
+
+      .contract-q-desc {
+        color: var(--text-mute);
+        line-height: 1.45;
+        font-size: 11px;
+      }
+
+      /* 05 Stop Visual */
+      .stop-bar-track {
+        height: 14px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-subtle);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .stop-bar-fill {
+        height: 100%;
+        background-color: var(--accent-warm);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .is-revealed .stop-bar-fill {
+        transform: scaleX(1);
+      }
+
+      /* Chapter 03 — Pinned Signature Moment (The Scrubbed Receipt) */
+      .pinned-proof-track {
+        height: 260vh;
+        position: relative;
+        width: 100%;
+      }
+
+      .pinned-proof-sticky {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      .receipt-machine-wrap {
+        width: 100%;
+        max-width: 860px;
+        background-color: var(--bg-panel);
+        border: 1px solid var(--border-subtle);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .receipt-machine-header {
+        padding: 0.75rem 1.25rem;
+        background-color: var(--bg-panel-sub);
+        border-bottom: 1px solid var(--border-subtle);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .receipt-status-left {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .receipt-spinner {
+        color: var(--accent-warm);
+        font-weight: 700;
+        display: inline-block;
+        width: 16px;
+      }
+
+      .receipt-scrub-meter {
+        font-family: var(--font-mono);
+        color: var(--text-dim);
+      }
+
+      .receipt-terminal-body {
+        padding: 1.5rem;
+        background-color: #08090d;
+        min-height: 380px;
+        max-height: 480px;
+        overflow-y: auto;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .receipt-pre {
+        font-family: var(--font-mono);
+        font-size: 12.5px;
+        line-height: 1.6;
+        color: var(--text-pure);
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+
+      .receipt-footer-sweep {
+        padding: 0.85rem 1.25rem;
+        background-color: var(--bg-panel);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--text-mute);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .underline-sweep-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--accent-warm);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+      }
+
+      .sweep-active .underline-sweep-bar {
+        transform: scaleX(1);
+      }
+
+      /* Registry Section */
+      .registry-section {
+        padding: 7rem 0;
+        border-bottom: 1px solid var(--border-subtle);
+        background-color: var(--bg-void);
+      }
+
+      .section-lead-tag {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text-dim);
+        margin-bottom: 0.75rem;
+        display: block;
+      }
+
+      .section-title {
+        font-size: clamp(2.2rem, 4vw, 3.4rem);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        color: var(--text-pure);
+        margin-bottom: 1rem;
+      }
+
+      .section-subtitle {
+        font-family: var(--font-mono);
+        font-size: 13.5px;
+        color: var(--text-mute);
+        margin-bottom: 3.5rem;
+        max-width: 650px;
+      }
+
+      .registry-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        background-color: var(--border-subtle);
+        gap: 1px;
+        border: 1px solid var(--border-subtle);
+      }
+
+      @media (max-width: 480px) {
+        .registry-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .registry-card {
+        color: inherit;
+        text-decoration: none;
+        background-color: var(--bg-panel);
+        padding: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        transform: translateY(24px);
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+      }
+
+      .registry-card.is-revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .registry-card:hover {
+        transform: translateY(-4px);
+        opacity: 0.95;
+      }
+
+      .card-header-mono {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--text-dim);
+        margin-bottom: 0.75rem;
+      }
+
+      .card-proof-badge {
+        color: var(--accent-warm);
+        border: 1px solid var(--accent-warm);
+        padding: 1px 5px;
+        font-size: 9.5px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .card-title {
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--text-pure);
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .card-footer-mono {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--border-subtle);
+        padding-top: 0.85rem;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+
+      .card-cat-tag {
+        color: var(--text-dim);
+      }
+
+      .card-risk-tag {
+        color: var(--text-mute);
+        font-weight: 700;
+      }
+
+      /* Footer */
+      .site-footer {
+        padding: 5rem 0 4rem;
+        background-color: var(--bg-panel);
+        border-top: 1px solid var(--border-subtle);
+        font-family: var(--font-mono);
+        font-size: 11px;
+        color: var(--text-dim);
+      }
+
+      .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .footer-brand {
+        font-weight: 700;
+        color: var(--text-pure);
+        letter-spacing: 0.06em;
+      }
+
+      .footer-nav {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .footer-nav a {
+        color: var(--text-mute);
+      }
+
+      .footer-nav a:hover {
+        color: var(--text-pure);
+      }
+
+      .footer-note {
+        border-top: 1px solid var(--border-subtle);
+        padding-top: 1.5rem;
+        line-height: 1.7;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      /* Prefers Reduced Motion: Unpin and make reveals instant */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+
+        .hero-badge-pill,
+        .hero-beat,
+        .hero-subline,
+        .hero-cta-row,
+        .chapter-card-inner,
+        .registry-card {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+
+        .pinned-proof-track {
+          height: auto !important;
+        }
+
+        .pinned-proof-sticky {
+          position: relative !important;
+          height: auto !important;
+          padding: 4rem 1.5rem !important;
+        }
+
+        .boundary-line-top, .boundary-line-bottom,
+        .boundary-line-left, .boundary-line-right,
+        .memory-line-bar, .stop-bar-fill, .scroll-rail-bar, .underline-sweep-bar {
+          transform: none !important;
+        }
+      }
+      /* Small screens: keep only the GitHub link in the top bar */
+      @media (max-width: 600px) {
+        .nav-links a:not(:last-child) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Global Scrub Progress Rail -->
+    <div class="scroll-rail-fixed" aria-hidden="true">
+      <div class="scroll-rail-bar" id="global-scroll-bar"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="nav-bar">
+      <div class="container nav-inner">
+        <a href="#" class="nav-brand">
+          <span class="status-dot"></span>
+          <span>AGENTIC LOOP ATLAS</span>
+        </a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#narrative">01 The Loop</a>
+          <a href="#chapter-proof">02 Proof</a>
+          <a href="#registry">03 Registry</a>
+          <a href="https://github.com/mrsarac/awesome-agentic-loops" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Full Viewport Hero with 5-Node Constellation Canvas -->
+      <section class="hero-viewport" aria-label="Hero Scene">
+        <canvas id="hero-canvas" class="hero-canvas-bg"></canvas>
+
+        <div class="container">
+          <div class="hero-content" id="hero-content">
+            <div class="hero-badge-pill">
+              <span>5 STAGES · SCRUB-BOUND · 60FPS TARGET</span>
+            </div>
+
+            <h1 class="hero-h1">
+              <span class="hero-beat beat-1">Motion is not progress.</span>
+              <span class="hero-beat beat-2 hero-beat-accent">Proof is.</span>
+            </h1>
+
+            <p class="hero-subline">
+              11 proof-grade automation loops · scroll to run the loop
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#registry" class="btn btn-primary">Read the 11 Loops</a>
+              <a href="https://github.com/mrsarac/awesome-agentic-loops" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metrics Strip with Scroll-Triggered Count-Up -->
+      <section class="metrics-strip-wrap" aria-label="Metrics Strip" id="metrics-strip">
+        <div class="container">
+          <div class="metrics-grid">
+            <div class="metric-cell">
+              <div class="metric-val" id="metric-loops">0</div>
+              <div class="metric-label">Proof-Grade Loops</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-val" id="metric-perms">0</div>
+              <div class="metric-label">Default Permissions</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-val" id="metric-questions">0</div>
+              <div class="metric-label">Contract Questions</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-val" id="metric-stages">0</div>
+              <div class="metric-label">Loop Stages</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-val" style="font-size: 2.2rem;">MIT</div>
+              <div class="metric-label">Open Source License</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chapters 01-05: The Loop Told by Scroll -->
+      <div class="chapters-super-container" id="narrative">
+        <!-- Chapter 01: Trigger -->
+        <section class="chapter-track" data-stage="1">
+          <div class="container">
+            <div class="chapter-card-inner">
+              <div class="chapter-top-bar">
+                <span class="chapter-numeral">01</span>
+                <span class="chapter-stage-tag">STAGE 01 / 05</span>
+              </div>
+              <h2 class="chapter-h2">Trigger</h2>
+              <p class="chapter-desc">Fires on schedule, event or human call.</p>
+
+              <div class="micro-visual-box">
+                <div class="trigger-pulse-track">
+                  <div class="pulse-beacon">
+                    <div class="pulse-ring"></div>
+                  </div>
+                  <span style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; color: var(--text-mute);">
+                    INBOUND EVENT DETECTED: cron(0 3 * * 1) || gh:workflow_dispatch
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chapter 02: Action -->
+        <section class="chapter-track" data-stage="2">
+          <div class="container">
+            <div class="chapter-card-inner">
+              <div class="chapter-top-bar">
+                <span class="chapter-numeral">02</span>
+                <span class="chapter-stage-tag">STAGE 02 / 05</span>
+              </div>
+              <h2 class="chapter-h2">Action</h2>
+              <p class="chapter-desc">Bounded work inside the declared blast radius.</p>
+
+              <div class="micro-visual-box">
+                <div class="action-boundary-box">
+                  <div class="boundary-line-top"></div>
+                  <div class="boundary-line-bottom"></div>
+                  <div class="boundary-line-left"></div>
+                  <div class="boundary-line-right"></div>
+                  <span>SCOPE CONSTRAINT: PERMITTED_ACTIONS = [INSPECT, PATCH, DEFER]</span>
+                  <span style="color: var(--accent-cyan); font-weight: 700;">BLAST RADIUS LOCKED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chapter 03: Proof (Pinned Signature Moment) -->
+        <div class="pinned-proof-track" id="chapter-proof" data-stage="3">
+          <div class="pinned-proof-sticky">
+            <div class="receipt-machine-wrap" id="receipt-machine">
+              <div class="receipt-machine-header">
+                <div class="receipt-status-left">
+                  <span class="receipt-spinner" id="braille-spinner">⠋</span>
+                  <span>03 PROOF — RECEIPT PRINTER</span>
+                </div>
+                <div class="receipt-scrub-meter" id="receipt-percent">00% SCRUBBED</div>
+              </div>
+
+              <div class="receipt-terminal-body" id="receipt-terminal">
+                <pre class="receipt-pre" id="receipt-output"></pre>
+              </div>
+
+              <div class="receipt-footer-sweep" id="receipt-footer">
+                <span>STAGE 03 / 05 · AAL-LOOP-001 TELEMETRY SEAL</span>
+                <span style="color: var(--accent-warm);">HUMAN GATE HELD</span>
+                <div class="underline-sweep-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 04: Memory -->
+        <section class="chapter-track" data-stage="4">
+          <div class="container">
+            <div class="chapter-card-inner">
+              <div class="chapter-top-bar">
+                <span class="chapter-numeral">04</span>
+                <span class="chapter-stage-tag">STAGE 04 / 05</span>
+              </div>
+              <h2 class="chapter-h2">Memory</h2>
+              <p class="chapter-desc">State written down so the next run starts informed.</p>
+
+              <div class="micro-visual-box">
+                <div class="memory-lines-container">
+                  <div class="memory-line-bar"></div>
+                  <div class="memory-line-bar"></div>
+                  <div class="memory-line-bar"></div>
+                  <div class="memory-line-bar"></div>
+                </div>
+
+                <div style="font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.5rem;">
+                  CONTRACT REGISTER · 7 GOVERNANCE QUESTIONS
+                </div>
+
+                <div class="contract-q-grid">
+                  <div class="contract-q-cell">
+                    <div class="contract-q-title"><span class="contract-q-num">Q1</span>When does it run?</div>
+                    <div class="contract-q-desc">Schedule, event, or human trigger — named.</div>
+                  </div>
+                  <div class="contract-q-cell">
+                    <div class="contract-q-title"><span class="contract-q-num">Q2</span>What may it touch?</div>
+                    <div class="contract-q-desc">The exact paths, services and accounts in scope.</div>
+                  </div>
+                  <div class="contract-q-cell">
+                    <div class="contract-q-title"><span class="contract-q-num">Q3</span>What may it change?</div>
+                    <div class="contract-q-desc">The permitted action set, with the risky ones gated.</div>
+                  </div>
+                  <div class="contract-q-cell">
+                    <div class="contract-q-title"><span class="contract-q-num">Q4</span>What stops it?</div>
+                    <div class="contract-q-desc">A falsifiable stop condition, checked every iteration.</div>
+                  </div>
+                  <div class="contract-q-cell">
+                    <div class="contract-q-title"><span class="contract-q-num">Q5</span>What is the proof?</div>
+                    <div class="contract-q-desc">The artifact that shows what happened, not what was intended.</div>
+                  </div>
+                  <div class="contract-q-cell">
+                    <div class="contract-q-title"><span class="contract-q-num">Q6</span>Who reviews it?</div>
+                    <div class="contract-q-desc">The human gate before anything irreversible.</div>
+                  </div>
+                </div>
+                <div style="margin-top: 1px; background-color: var(--bg-panel); border: 1px solid var(--border-subtle); padding: 0.85rem 1.2rem; font-family: var(--font-mono); font-size: 11px;">
+                  <span class="contract-q-num">Q7</span><span style="color: var(--text-pure); font-weight: 700; margin-right: 0.4rem;">When is it retired?</span>
+                  <span style="color: var(--text-mute);">The condition that ends the loop instead of letting it drift.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chapter 05: Stop -->
+        <section class="chapter-track" data-stage="5">
+          <div class="container">
+            <div class="chapter-card-inner">
+              <div class="chapter-top-bar">
+                <span class="chapter-numeral">05</span>
+                <span class="chapter-stage-tag">STAGE 05 / 05</span>
+              </div>
+              <h2 class="chapter-h2">Stop</h2>
+              <p class="chapter-desc">Halts on the declared condition, not on a feeling.</p>
+
+              <div class="micro-visual-box">
+                <div class="stop-bar-track">
+                  <div class="stop-bar-fill"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase;">
+                  <span style="color: var(--accent-warm);">TERMINATION ASSERTION: TRUE</span>
+                  <span style="color: var(--text-mute);">ZERO DRIFT · PROCESS EXITED (CODE 0)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- The Registry Section: 11 Real Loops -->
+      <section class="registry-section" id="registry" aria-labelledby="registry-heading">
+        <div class="container">
+          <span class="section-lead-tag">03 — THE REGISTRY</span>
+          <h2 class="section-title" id="registry-heading">11 Proof-Grade Loops</h2>
+          <p class="section-subtitle">
+            Every loop satisfies the 7 contract questions and terminates on falsifiable verification receipts.
+          </p>
+
+          <div class="registry-grid" id="registry-container">
+            <!-- 11 loop cards populated by JS -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            AGENTIC LOOP ATLAS
+          </div>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="https://github.com/mrsarac/awesome-agentic-loops" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+            <a href="#narrative">The 5 Stages</a>
+            <a href="#chapter-proof">Receipt</a>
+            <a href="#registry">Catalog</a>
+          </nav>
+        </div>
+        <div class="footer-note">
+          <div>
+            MIT License · All 11 loops proof-grade
+          </div>
+          <div>
+            Loop data from catalog.json · LOOP-MKT-20260622
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function() {
+        "use strict";
+
+        /* Motion animates only transform and opacity, never layout properties. */
+
+        const LOOPS_DATA = [
+          { id: "AAL-LOOP-001", name: "Core Hygiene Sweep", category: "operations", risk: "docs" },
+          { id: "AAL-LOOP-002", name: "Docs README Milestone Sweep", category: "documentation", risk: "docs" },
+          { id: "AAL-LOOP-003", name: "Production Error Sweep", category: "operations", risk: "read-only/service" },
+          { id: "AAL-LOOP-004", name: "Flaky Test Killer", category: "engineering", risk: "code" },
+          { id: "AAL-LOOP-005", name: "PR CI Babysitter", category: "engineering", risk: "code/external" },
+          { id: "AAL-LOOP-006", name: "Stale PR Review Resolver", category: "engineering", risk: "code/external" },
+          { id: "AAL-LOOP-007", name: "Security Headers OWASP Sweep", category: "security", risk: "code/service" },
+          { id: "AAL-LOOP-008", name: "Cost Budget Watch Loop", category: "finops", risk: "read-only/billing" },
+          { id: "AAL-LOOP-009", name: "Research to Public Artifact Loop", category: "research", risk: "external" },
+          { id: "AAL-LOOP-010", name: "Agent Mesh Health Loop", category: "operations", risk: "read-only" },
+          { id: "AAL-LOOP-011", name: "Competitor Delta Proof Loop", category: "research", risk: "read-only/external-signal" }
+        ];
+
+        const RECEIPT_TEXT = 
+`AAL-LOOP-001 · Core Hygiene Sweep
+trigger: scheduled hygiene scan (human-approved scope)
+INSPECT
+  git status --porcelain      → 3 modified, 0 untracked
+  find . -name "*.tmp" -o -name "*.log" | wc -l  → 0
+  npx markdownlint-cli2 "**/*.md"  → 2 warnings
+PATCH
+  docs/launch-plan.md         → trailing whitespace removed
+  README.md                   → stale "coming soon" line dropped
+DEFER
+  drafts/announcement-draft.md → outside declared scope, deferred
+VERIFY
+  git diff --stat             → 2 files changed, 2 insertions(+), 3 deletions(-)
+  npx markdownlint-cli2 "**/*.md"  → 0 warnings
+  proof: clean tree, lint clean, scope respected
+STOP
+  stop condition met: one bounded pass complete, deferred item logged
+  receipt written · no commit made · human gate held`;
+
+        const BRAILLE_FRAMES = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"];
+
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        // 1. Populate Registry Cards
+        const registryContainer = document.getElementById("registry-container");
+        if (registryContainer) {
+          LOOPS_DATA.forEach(function(item, idx) {
+            // Each card links to its loop card file in the repository.
+            const slug = "aal-loop-" + item.id.slice(-3) + "-" + item.name.toLowerCase().replace(/ /g, "-");
+            const card = document.createElement("a");
+            card.className = "registry-card";
+            card.href = "https://github.com/mrsarac/awesome-agentic-loops/blob/main/loops/" + slug + ".md";
+            card.setAttribute("aria-label", item.id + ": " + item.name + " (opens the loop card on GitHub)");
+
+            card.innerHTML = 
+              '<div class="card-header-mono">' +
+                '<span>' + item.id + '</span>' +
+                '<span class="card-proof-badge">PROOF-GRADE</span>' +
+              '</div>' +
+              '<h3 class="card-title">' + item.name + '</h3>' +
+              '<div class="card-footer-mono">' +
+                '<span class="card-cat-tag">' + item.category + '</span>' +
+                '<span class="card-risk-tag">risk: ' + item.risk + '</span>' +
+              '</div>';
+
+            registryContainer.appendChild(card);
+          });
+        }
+
+        // 2. Hero 3-Beat Entrance
+        window.addEventListener("DOMContentLoaded", function() {
+          const heroContent = document.getElementById("hero-content");
+          if (heroContent) {
+            heroContent.classList.add("hero-loaded");
+          }
+        });
+
+        // 3. Hand-Rolled 5-Node Constellation Canvas Hero
+        const heroCanvas = document.getElementById("hero-canvas");
+        let heroCtx = null;
+        let canvasW = 0;
+        let canvasH = 0;
+        let dpr = 1;
+
+        if (heroCanvas) {
+          heroCtx = heroCanvas.getContext("2d");
+        }
+
+        const NODES = [
+          { label: "TRIGGER", angle: -Math.PI / 2 },
+          { label: "ACTION", angle: -Math.PI / 2 + (2 * Math.PI / 5) },
+          { label: "PROOF", angle: -Math.PI / 2 + (4 * Math.PI / 5) },
+          { label: "MEMORY", angle: -Math.PI / 2 + (6 * Math.PI / 5) },
+          { label: "STOP", angle: -Math.PI / 2 + (8 * Math.PI / 5) }
+        ];
+
+        // Background ambient dust particles
+        const PARTICLES = [];
+        for (let p = 0; p < 45; p++) {
+          PARTICLES.push({
+            x: Math.random(),
+            y: Math.random(),
+            vx: (Math.random() - 0.5) * 0.0003,
+            vy: (Math.random() - 0.5) * 0.0003,
+            size: 1 + Math.random() * 1.5,
+            opacity: 0.15 + Math.random() * 0.35
+          });
+        }
+
+        function resizeHeroCanvas() {
+          if (!heroCanvas) return;
+          dpr = Math.min(window.devicePixelRatio || 1, 2);
+          const rect = heroCanvas.getBoundingClientRect();
+          canvasW = rect.width;
+          canvasH = rect.height;
+          heroCanvas.width = Math.round(canvasW * dpr);
+          heroCanvas.height = Math.round(canvasH * dpr);
+          if (heroCtx) {
+            heroCtx.setTransform(1, 0, 0, 1, 0, 0);
+            heroCtx.scale(dpr, dpr);
+          }
+        }
+
+        window.addEventListener("resize", resizeHeroCanvas, { passive: true });
+        resizeHeroCanvas();
+
+        function renderHeroCanvas(timeSec) {
+          if (!heroCtx || canvasW === 0 || canvasH === 0) return;
+
+          heroCtx.clearRect(0, 0, canvasW, canvasH);
+
+          // 1. Ambient drift particles
+          PARTICLES.forEach(function(pt) {
+            if (!prefersReducedMotion) {
+              pt.x += pt.vx;
+              pt.y += pt.vy;
+              if (pt.x < 0) pt.x = 1;
+              if (pt.x > 1) pt.x = 0;
+              if (pt.y < 0) pt.y = 1;
+              if (pt.y > 1) pt.y = 0;
+            }
+
+            heroCtx.fillStyle = "rgba(148, 163, 184, " + pt.opacity + ")";
+            heroCtx.beginPath();
+            heroCtx.arc(pt.x * canvasW, pt.y * canvasH, pt.size, 0, Math.PI * 2);
+            heroCtx.fill();
+          });
+
+          // 2. 5 Stages Constellation Loop
+          const cx = canvasW * 0.5;
+          const cy = canvasH * 0.52;
+          const radius = Math.min(canvasW, canvasH) * 0.36;
+
+          const nodeCoords = NODES.map(function(node, i) {
+            const rot = !prefersReducedMotion ? (timeSec * 0.04) : 0;
+            const a = node.angle + rot;
+            return {
+              x: cx + Math.cos(a) * radius,
+              y: cy + Math.sin(a) * radius,
+              label: node.label,
+              index: i
+            };
+          });
+
+          // Connect perimeter lines
+          heroCtx.lineWidth = 1;
+          for (let i = 0; i < 5; i++) {
+            const nextIdx = (i + 1) % 5;
+            const p1 = nodeCoords[i];
+            const p2 = nodeCoords[nextIdx];
+
+            heroCtx.strokeStyle = "rgba(56, 59, 78, 0.45)";
+            heroCtx.beginPath();
+            heroCtx.moveTo(p1.x, p1.y);
+            heroCtx.lineTo(p2.x, p2.y);
+            heroCtx.stroke();
+          }
+
+          // Active pulse wave traveling along the 5 segments
+          if (!prefersReducedMotion) {
+            const loopProgress = (timeSec * 0.4) % 5;
+            const curSegment = Math.floor(loopProgress);
+            const segFraction = loopProgress - curSegment;
+            const pA = nodeCoords[curSegment];
+            const pB = nodeCoords[(curSegment + 1) % 5];
+
+            const pulseX = pA.x + (pB.x - pA.x) * segFraction;
+            const pulseY = pA.y + (pB.y - pA.y) * segFraction;
+
+            heroCtx.fillStyle = "#f59e0b";
+            heroCtx.beginPath();
+            heroCtx.arc(pulseX, pulseY, 3.5, 0, Math.PI * 2);
+            heroCtx.fill();
+          }
+
+          // Render Nodes
+          nodeCoords.forEach(function(pt) {
+            heroCtx.fillStyle = "#111218";
+            heroCtx.strokeStyle = "#f59e0b";
+            heroCtx.lineWidth = 1.5;
+
+            heroCtx.beginPath();
+            heroCtx.arc(pt.x, pt.y, 6, 0, Math.PI * 2);
+            heroCtx.fill();
+            heroCtx.stroke();
+
+            heroCtx.fillStyle = "rgba(148, 163, 184, 0.65)";
+            heroCtx.font = "9px ui-monospace, SF Mono, Menlo, monospace";
+            heroCtx.textAlign = "center";
+            heroCtx.fillText(pt.label, pt.x, pt.y + 16);
+          });
+        }
+
+        // 4. Scroll Choreography Engine (Single rAF Loop, Cached Bounds)
+        const globalScrollBar = document.getElementById("global-scroll-bar");
+        const proofTrack = document.getElementById("chapter-proof");
+        const receiptOutput = document.getElementById("receipt-output");
+        const receiptPercent = document.getElementById("receipt-percent");
+        const brailleSpinner = document.getElementById("braille-spinner");
+        const receiptFooter = document.getElementById("receipt-footer");
+
+        let cachedProofTop = 0;
+        let cachedProofHeight = 0;
+        let cachedDocHeight = 0;
+
+        function updateCachedGeometry() {
+          const doc = document.documentElement;
+          cachedDocHeight = doc.scrollHeight - window.innerHeight;
+
+          if (proofTrack) {
+            const rect = proofTrack.getBoundingClientRect();
+            const scrollY = window.pageYOffset || doc.scrollTop;
+            cachedProofTop = rect.top + scrollY;
+            cachedProofHeight = proofTrack.offsetHeight - window.innerHeight;
+          }
+        }
+
+        window.addEventListener("resize", updateCachedGeometry, { passive: true });
+        updateCachedGeometry();
+
+        let lastScrubRatio = -1;
+
+        function updateScrollChoreography() {
+          const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+          // Global progress rail
+          if (globalScrollBar && cachedDocHeight > 0) {
+            const globalProgress = Math.max(0, Math.min(1, scrollY / cachedDocHeight));
+            globalScrollBar.style.transform = "scaleY(" + globalProgress + ")";
+          }
+
+          // Pinned Chapter 03 (Proof Receipt Scrub)
+          if (proofTrack && receiptOutput && cachedProofHeight > 0) {
+            let scrubProgress = 0;
+            if (prefersReducedMotion) {
+              scrubProgress = 1.0;
+            } else {
+              const relScroll = scrollY - cachedProofTop;
+              scrubProgress = Math.max(0, Math.min(1, relScroll / cachedProofHeight));
+            }
+
+            if (scrubProgress !== lastScrubRatio) {
+              lastScrubRatio = scrubProgress;
+
+              // Character count scrub
+              const totalChars = RECEIPT_TEXT.length;
+              const activeChars = Math.floor(scrubProgress * totalChars);
+              receiptOutput.textContent = RECEIPT_TEXT.slice(0, activeChars);
+
+              // Percentage meter
+              if (receiptPercent) {
+                const pct = Math.round(scrubProgress * 100);
+                receiptPercent.textContent = (pct < 10 ? "0" : "") + pct + "% SCRUBBED";
+              }
+
+              // Braille spinner cycle
+              if (brailleSpinner) {
+                if (scrubProgress > 0 && scrubProgress < 1) {
+                  const frameIdx = Math.floor(scrubProgress * 36) % BRAILLE_FRAMES.length;
+                  brailleSpinner.textContent = BRAILLE_FRAMES[frameIdx];
+                } else if (scrubProgress >= 1) {
+                  brailleSpinner.textContent = "✓";
+                } else {
+                  brailleSpinner.textContent = "⠋";
+                }
+              }
+
+              // Underline sweep trigger when completed
+              if (receiptFooter) {
+                if (scrubProgress >= 0.98) {
+                  receiptFooter.classList.add("sweep-active");
+                } else {
+                  receiptFooter.classList.remove("sweep-active");
+                }
+              }
+            }
+          }
+        }
+
+        // 5. Staggered Reveals on Scroll (IntersectionObserver)
+        const revealObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-revealed");
+            }
+          });
+        }, {
+          threshold: 0.15,
+          rootMargin: "0px 0px -40px 0px"
+        });
+
+        document.querySelectorAll(".chapter-card-inner").forEach(function(el) {
+          revealObserver.observe(el);
+        });
+
+        document.querySelectorAll(".registry-card").forEach(function(el, i) {
+          el.style.transitionDelay = (i * 0.04) + "s";
+          revealObserver.observe(el);
+        });
+
+        // 6. Metrics Count-Up on Scroll
+        let metricsDone = false;
+        const metricLoops = document.getElementById("metric-loops");
+        const metricPerms = document.getElementById("metric-perms");
+        const metricQuestions = document.getElementById("metric-questions");
+        const metricStages = document.getElementById("metric-stages");
+        const metricsStrip = document.getElementById("metrics-strip");
+
+        function triggerMetricsCountUp() {
+          if (metricsDone) return;
+          metricsDone = true;
+
+          if (prefersReducedMotion) {
+            if (metricLoops) metricLoops.textContent = "11";
+            if (metricPerms) metricPerms.textContent = "0";
+            if (metricQuestions) metricQuestions.textContent = "7";
+            if (metricStages) metricStages.textContent = "5";
+            return;
+          }
+
+          const durationMs = 1200;
+          const startTime = performance.now();
+
+          function stepCount(now) {
+            const progress = Math.min(1, (now - startTime) / durationMs);
+            const ease = 1 - Math.pow(1 - progress, 3);
+
+            if (metricLoops) metricLoops.textContent = String(Math.round(ease * 11));
+            if (metricPerms) metricPerms.textContent = "0";
+            if (metricQuestions) metricQuestions.textContent = String(Math.round(ease * 7));
+            if (metricStages) metricStages.textContent = String(Math.round(ease * 5));
+
+            if (progress < 1) {
+              requestAnimationFrame(stepCount);
+            } else {
+              if (metricLoops) metricLoops.textContent = "11";
+              if (metricPerms) metricPerms.textContent = "0";
+              if (metricQuestions) metricQuestions.textContent = "7";
+              if (metricStages) metricStages.textContent = "5";
+            }
+          }
+          requestAnimationFrame(stepCount);
+        }
+
+        if (metricsStrip) {
+          const metricsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                triggerMetricsCountUp();
+              }
+            });
+          }, { threshold: 0.2 });
+
+          metricsObserver.observe(metricsStrip);
+        }
+
+        // 7. Master Animation Frame (Single rAF Loop for Both Hero and Scroll Scrub)
+        let isMasterRunning = true;
+        function masterEngine(time) {
+          const timeSec = time * 0.001;
+
+          if (!prefersReducedMotion) {
+            renderHeroCanvas(timeSec);
+          }
+
+          updateScrollChoreography();
+
+          if (isMasterRunning) {
+            requestAnimationFrame(masterEngine);
+          }
+        }
+
+        // Initial render for reduced-motion or immediate start
+        if (prefersReducedMotion) {
+          renderHeroCanvas(0);
+          updateScrollChoreography();
+        } else {
+          requestAnimationFrame(masterEngine);
+        }
+
+        // Window scroll listener only marks need to sync
+        window.addEventListener("scroll", updateScrollChoreography, { passive: true });
+
+      })();
+    </script>
+  </body>
+</html>

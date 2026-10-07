@@ -29,6 +29,9 @@ A loop only belongs here when it has:
 **Tagline:** Not prompts. Operating loops — with receipts.
 
 - [GitHub repository](https://github.com/mrsarac/awesome-agentic-loops)
+- **Live demo:** [mrsarac.github.io/awesome-agentic-loops/demo](https://mrsarac.github.io/awesome-agentic-loops/demo/), a one-page scroll walkthrough of the loop contract and all 11 loop cards ([source](docs/demo/))
+
+[![Agentic Loop Atlas demo page](docs/demo/screenshot.png)](https://mrsarac.github.io/awesome-agentic-loops/demo/)
 
 ## Start with these loops
 
@@ -150,6 +153,7 @@ schemas/loop-card.schema.json JSON Schema for loop cards
 loops/                       Canonical loop cards
 examples/                    Receipts and real-world proof examples
 docs/                        Taxonomy, platform matrix, launch notes
+docs/demo/                   Live demo page (GitHub Pages)
 ```
 
 ## Guardrails
