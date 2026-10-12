@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-10-12T11:20:48.696086+02:00",
+  "report_code": "LOOP-MKT-WK-20261012-SUMMER",
+  "signal_hash": "8f81a519b7e8833984a2eec93ac6806cc0ff09eb6d2790c85c8f33874f3df328",
+  "signals": [
+    {
+      "full_name": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "stars": 114467,
+      "forks": 14579,
+      "updated": "2026-10-12",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 112542,
+      "delta": 1925,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "snarktank/ralph",
+      "url": "https://github.com/snarktank/ralph",
+      "stars": 21944,
+      "forks": 2096,
+      "updated": "2026-10-12",
+      "description": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 21907,
+      "delta": 37,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "wanshuiyin/Auto-claude-code-research-in-sleep",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "stars": 17308,
+      "forks": 1454,
+      "updated": "2026-10-12",
+      "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 16978,
+      "delta": 330,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "HKUDS/DeepCode",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "stars": 16696,
+      "forks": 2171,
+      "updated": "2026-10-12",
+      "description": "\"DeepCode: Open Agentic Coding (Agent Harness & Loop Engineering & Multi-Agent Orchestration)\"",
+      "queries": [
+        "agentic loop",
+        "loop engineering"
+      ],
+      "previous_stars": 16668,
+      "delta": 28,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "cobusgreyling/loop-engineering",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "stars": 11507,
+      "forks": 1550,
+      "updated": "2026-10-12",
+      "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
+      "queries": [
+        "agentic loop",
+        "loop engineering"
+      ],
+      "previous_stars": 11419,
+      "delta": 88,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "loopx-project/loopx",
+      "url": "https://github.com/loopx-project/loopx",
+      "stars": 6254,
+      "forks": 595,
+      "updated": "2026-10-12",
+      "description": "A control plane with a durable state kernel for long-horizon agents and teams. Keep work moving and improving across sessions, with less human attention.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 6152,
+      "delta": 102,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "ModelEngine-Group/nexent",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "stars": 5922,
+      "forks": 739,
+      "updated": "2026-10-12",
+      "description": "Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes.",
+      "queries": [
+        "agentic loop",
+        "loop engineering"
+      ],
+      "previous_stars": 5895,
+      "delta": 27,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "agentscope-ai/AgentTeams",
+      "url": "https://github.com/agentscope-ai/AgentTeams",
+      "stars": 5733,
+      "forks": 708,
+      "updated": "2026-10-12",
+      "description": "An open-source Collaborative Multi-Agent OS for transparent, human-in-the-loop task coordination via Matrix rooms.",
+      "queries": [
+        "agentic loop"
+      ],
+      "previous_stars": 5696,
+      "delta": 37,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "bradAGI/awesome-cli-coding-agents",
+      "url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+      "stars": 1341,
+      "forks": 438,
+      "updated": "2026-10-12",
+      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure.",
+      "queries": [
+        "awesome agent loops"
+      ],
+      "previous_stars": 1316,
+      "delta": 25,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    },
+    {
+      "full_name": "valkor-ai/loom",
+      "url": "https://github.com/valkor-ai/loom",
+      "stars": 1246,
+      "forks": 171,
+      "updated": "2026-10-12",
+      "description": "Loop engineering for agentic software delivery.",
+      "queries": [
+        "loop engineering"
+      ],
+      "previous_stars": 1178,
+      "delta": 68,
+      "reasons": [
+        "weekly_star_growth_25_plus"
+      ]
+    }
+  ]
+}
